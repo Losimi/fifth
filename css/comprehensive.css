@@ -1,0 +1,100 @@
+body {
+    background-color: #f0f0f0;
+}
+
+header {
+    width: 100%;
+    height: 43px;
+    background-color: gery;
+    border: 1px solid rgb(229, 229, 229);
+}
+
+header .top {
+    padding: 5px 25px;
+}
+
+header .top p {
+    display: block;
+    width: 50%;
+    height: 43px;
+    float: left;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+header .top .main_page {
+    float: right;
+    width: 50%;
+    height: 43px;
+}
+
+header .top .main_page .menu_setting {
+    display: block;
+    width: 40px;
+    height: 20px;
+    padding: 3px;
+    border: 1px solid rgb(209, 209, 209);
+    border-radius: 2px;
+    background-color: #fff;
+    background-image: url(../icon/svgicons_43e8a_.svg);
+    background-position: -157px -200px;
+    color: #3c3c3c;
+    position: relative;
+    float: right;
+}
+
+header .top .main_page .menu_setting ul {
+    display: none;
+    width: 169px;
+    height: 99px;
+    padding: 2px 0;
+    border: 1px solid #d5d5d5;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, .3) 0 3px 8px;
+    position: absolute;
+    left: -123px;
+    top: 31px;
+}
+
+header .top .main_page .menu_setting ul li a {
+    display: block;
+    width: 129px;
+    height: 19px;
+    padding: 7px 20px;
+    font-size: 13px;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+header .top .main_page #view{
+    width: 130px;
+    height: 30px;
+    padding: 6px 10px;
+    outline: none;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 14px;
+    line-height: 16px;
+    float: right;
+    margin-right: 20px;
+}
+header .top .main_page a{
+    display: block;
+    width: 13px;
+    height: 13px;
+    background: url(../icon/circle2_1526a_.svg) -18px 0 no-repeat;
+    float: right;
+    margin-right: 20px;
+    margin-top: 9px;
+    position: relative;
+}
+header .top .main_page a:after{
+    width: 4px;
+    height: 5px;
+    display: block;
+    content: "";
+    position: absolute;
+    left: 8px;
+    top: 1px;
+    background: url(../icon/arrow_2d426_.svg) -1px 0 no-repeat;
+}

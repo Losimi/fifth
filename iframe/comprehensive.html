@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/comprehensive.css">
+</head>
+
+<body>
+    <header>
+        <div class="top">
+            <p>欢迎<span>董梦轩</span></p>
+            <div class="main_page">
+                <i class="menu_setting">
+                    <ul>
+                        <li><a href="">添加组件</a></li>
+                        <li><a href="">重新排列</a></li>
+                        <li><a href="">全屏查看</a></li>
+                    </ul>
+                </i>
+                <select name="view" id="view">
+                    <option value="0">经典视图</option>
+                    <option value="1">董梦轩的主页</option>
+                    <option value="2">定制主页</option>
+                </select>
+                <a href="javascript:location.reload();"></a>
+            </div>
+        </div>
+    </header>
+    <div class="maincount">
+        <div class="unclose"></div>
+        <div class="today_info"></div>
+        <div class="price"></div>
+        <div class="closed"></div>
+    </div>
+</body>
+
+</html>
+<script type="text/html" id="item">
+{{if status==1}}
+<table>
+    <thead>
+        <tr>
+            <th>主题</th>
+            <th>到期日期</th>
+            <th>状态</th>
+            <th>优先级</th>
+            <th>关联到</th>
+            <th>联系人姓名</th>
+            <th>活动所有者</th>
+            <th>活动类型</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{each data}}
+        <tr>
+            <td>{{$value.the_theme}}</td>
+            <td>{{$value.due_to_the_time}}</td>
+            <td>{{$value.state}}</td>
+            <td>{{$value.priority}}</td>
+            <td>{{$value.associated_with_the}}</td>
+            <td>{{$value.contact_name}}</td>
+            <td>{{$value.activity_owner}}</td>
+            <td>{{$value.the_activity_type}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+{{/if}}
+</script>
+<script type="text/html" id="today">
+{{if status==1}}
+<table>
+    <thead>
+       <tr>
+            <th>线索名称</th>
+            <th>公司</th>
+            <th>邮箱</th>
+            <th>电话</th>
+            <th>线索来源</th>
+            <th>线索所有者</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{each data}}
+        <tr>
+            <td>{{$value.clues_name}}</td>
+            <td>{{$value.the_company}}</td>
+            <td>{{$value.email}}</td>
+            <td>{{$value.phone}}</td>
+            <td>{{$value.clues_to}}</td>                
+            <td>{{$value.clue_owner}}</td>
+        </tr>
+       {{/each}}
+    </tbody>
+</table>
+{{/if}}
+</script>
+<script type="text/html" id="price">
+
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdn.staticfile.org/artTemplate.js/3.0.1/template.js"></script>
+<script>
+    $.ajax({
+        url: "../php/comprehensive.php",
+        type: "POST",
+        data: {
+            "action": "unclose"
+        },
+        dataType: "json",
+        success: function (data, textStatus) {
+            console.log(data);
+            var html = template("item", data);
+            $(".unclose").html(html);
+        },
+        error: function (XMLRequest, textStatus, errorThrown) {
+            console.log("报错: " + errorThrown);
+        }
+
+    })
+    $.ajax({
+        url: "../php/comprehensive.php",
+        type: "POST",
+        data: {
+            "action": "today_info"
+        },
+        dataType: "json",
+        success: function (data, textStatus) {
+            console.log(data);
+            var html = template("today", data);
+            $(".today_info").html(html);
+        },
+        error: function (XMLRequest, textStatus, errorThrown) {
+            console.log("错误：" + errorThrown);
+        }
+    })
+    $.ajax({
+        url:"../php/comprehensive.php",
+        type:"POST",
+        data:{
+            "action":"price"
+        },
+        dataType:"json",
+        success:function(data,textStatus){
+            console.log(data);
+            var html = template("price",data);
+            $(".price").html(html);
+        },
+        error:function(XMLRequest,textStatus,errorThrown){
+            console.log("warnimg:"+errorThrown);
+        }
+    })
+</script>
