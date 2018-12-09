@@ -280,9 +280,11 @@
             $(".closed").hide();
         }
     })
-    if( $(".maincount table tr").index() >=5 ){
+    window.onload = function(){
+    if( $(".maincount table tr:gt(6)"){
         $(this).hide();
     }else{
         $(this).show();
+    }
     }
 </script>
