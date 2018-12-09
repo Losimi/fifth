@@ -1,0 +1,2269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/nomalize.css">
+    <link rel="stylesheet" href="css/customer.css">
+</head>
+
+<body>
+    <div id="show" class="bodycontainer">
+        <!-- 二级菜单 -->
+        <div class="cvHeader">
+            <table class="cvTab" width="100%" border="0" cellspacing="1">
+                <tbody>
+                    <tr>
+                        <td valign="top">
+                            <div class="pR">
+                                <div class="oH">
+                                    <div class="comboBox">
+                                        <div class="Selected">
+                                            <span>所有的任务、通话及活动<i></i></span>
+                                        </div>
+                                    </div>
+                                    <span id="cvIcon">
+                                            <a class="" href="javascript:location.reload();">编辑<i></i></a>
+                                    </span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="align">
+                            <div class="dIB">
+                                <a href="javascript:;">
+                                    <span class="svgImg"></span>
+                                </a>
+                                <a class="ml" href="javascript:;">
+                                    <span class="sugImg"></span>
+                                </a>
+                            </div>
+                            <div class="view-to"></div>
+                            <button class="newbutton"><a></a>任务</button>
+                            <button class="newbutton"><a></a>活动</button>
+                            <button class="newbutton"><a></a>通话</button>
+                            <span class="normaDown">
+                                <a href=""><i></i></a>
+
+                            </span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- 下拉菜单 -->
+        <div class="cvHolder">
+            <div class="boxContain">
+                <div class="cvsearch">
+                    <input type="text" id="searchHolder">
+                </div>
+                <div class="cvlist">
+                    <div class="st">
+                        <span class="cbTitle">分享给我的</span>
+                        <ul>
+                            <li>
+                                <span class="Star"></span>
+                                <span class="cbView">所有的任务、通话及活动</span>
+                            </li>
+                            <li>
+                                <span class="Star"></span>
+                                <span class="cbView">所有电话</span>
+                            </li>
+                            <li>
+                                <span class="Star"></span>
+                                <span class="cbView">所有活动</span>
+                            </li>
+                            <li>
+                                <span class="Star"></span>
+                                <span class="cbView">所有任务</span>
+                            </li>
+                            <li>
+                                <span class="Star"></span>
+                                <span class="cbView">接听的电话</span>
+                            </li>
+                            <li>
+                                <span class="Star"></span>
+                                <span class="cbView">取消的通话</span>
+                            </li>
+                            <li>
+                                <span class="Star"></span>
+                                <span class="cbView">关闭任务、通话及活动</span>
+                            </li>
+                            <li>
+                                <span class="Star"></span>
+                                <span class="cbView">已关闭的任务</span>
+                            </li>
+                            <li>
+                                <span class="Star"></span>
+                                <span class="cbView">拨入电话</span>
+                            </li>
+                            <li>
+                                <span class="Star"></span>
+                                <span class="cbView">我的任务、通话及活动</span>
+                            </li>
+                            <li>
+                                <span class="Star"></span>
+                                <span class="cbView">我接听的通话</span>
+                            </li>
+                            <li>
+                                <span class="Star"></span>
+                                <span class="cbView">我的电话</span>
+                            </li>
+                            <li>
+                                <span class="Star"></span>
+                                <span class="cbView">我的取消的电话</span>
+                            </li>
+                            <li>
+                                <span class="Star"></span>
+                                <span class="cbView">我的活动</span>
+                            </li>
+                            <li>
+                                <span class="Star"></span>
+                                <span class="cbView">我的拨入电话</span>
+                            </li>
+                            <li>
+                                <span class="Star"></span>
+                                <span class="cbView">拨入电话</span>
+                            </li>
+                            <li>
+                                <span class="Star"></span>
+                                <span class="cbView">已关闭的任务</span>
+                            </li>
+                            <li>
+                                <span class="Star"></span>
+                                <span class="cbView">拨入电话</span>
+                            </li>
+                            <li>
+                                <span class="Star"></span>
+                                <span class="cbView">我的任务、通话及活动</span>
+                            </li>
+                            <li>
+                                <span class="Star"></span>
+                                <span class="cbView">我接听的通话</span>
+                            </li>
+                            <li>
+                                <span class="Star"></span>
+                                <span class="cbView">我的电话</span>
+                            </li>
+                            <li>
+                                <span class="Star"></span>
+                                <span class="cbView">我的取消的电话</span>
+                            </li>
+                            <li>
+                                <span class="Star"></span>
+                                <span class="cbView">我的活动</span>
+                            </li>
+                            <li>
+                                <span class="Star"></span>
+                                <span class="cbView">我的拨入电话</span>
+                            </li>
+                            <li>
+                                <span class="Star"></span>
+                                <span class="cbView">拨入电话</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="px-x">
+                        <div class="scroll-x">
+
+                        </div>
+                    </div>
+                    <div class="px-y">
+                        <span class="scroll-y">
+
+                        </span>
+                    </div>
+                </div>
+                <div id="createView">
+                    <a href="javascript:;"><i></i>新建视图</a>
+                </div>
+            </div>
+        </div>
+        <!-- 内容部分 1 -->
+        <div class="cvBor">
+            <div class="leftBor">
+                <form action="">
+                    <div class="custom">
+                        <div class="lpHead">
+                            <div class="lv-filter">
+                                <span class=“filter>过滤任务、通话及活动通过</span>
+                                <span class="search-Icon"></span>
+                            </div>
+                            <div class="lv-fil">
+                                <span class="Icon-search"></span>
+                                <input type="text" class="setupsearch" value="搜索">
+                                <a href="javascript:;" id="lv-fil-clear"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div id="lv-scrool">
+                            <div class="Facet">
+                                <div class="oneFacet">
+                                    <div class="facetCon">
+                                        <div class="facet-title">
+                                            <h2 class="unit">
+                                                <span>
+                                                    <label class="fL">
+                                                        <span class="vam">
+                                                            <i></i>受影响的记录</span>
+                                                    </label>
+                                                    <div id="Rec" class="Rec">
+                                                        <p class="xima">通过</p>
+                                                        <div class="oBor">
+                                                            <select name="" id="touchSource">
+                                                                <option>用户和系统</option>
+                                                                <option>用户或系统</option>
+                                                                <option>用户</option>
+                                                                <option>系统</option>
+                                                                <option>仅用户</option>
+                                                                <option>仅系统</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </span>
+                                            </h2>
+                                        </div>
+                                        <ul id="sub-filter" class="sub-filter">
+                                            <li>
+                                                <div class="facet">
+                                                    <div class="days oBor">
+                                                        <select>
+                                                            <option>在最近</option>
+                                                            <option>今天</option>
+                                                            <option>本周</option>
+                                                            <option>本月</option>
+                                                            <option>今年</option>
+                                                            <option>在过去30天</option>
+                                                            <option>在过去60天</option>
+                                                            <option>在过去90天</option>
+                                                            <option>今天</option>
+                                                            <option>直到现在</option>
+                                                        </select>
+                                                    </div>
+                                                    <input type="text" value="2" class="Addend">
+                                                    <div class="oBor" id="seldays">
+                                                        <select>
+                                                            <option>天</option>
+                                                            <option>周</option>
+                                                            <option>月</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="oneFacet">
+                                    <div class="facetCon">
+                                        <div class="facet-title">
+                                            <h2 class="unit">
+                                                <span>
+                                                    <label class="fL">
+                                                        <span class="vam">
+                                                            <i></i>未受影响的记录</span>
+                                                    </label>
+                                                    <div id="Rec" class="Rec">
+                                                        <p class="xima">通过</p>
+                                                        <div class="oBor">
+                                                            <select name="" id="touchSource">
+                                                                <option>用户和系统</option>
+                                                                <option>用户或系统</option>
+                                                                <option>用户</option>
+                                                                <option>系统</option>
+                                                                <option>仅用户</option>
+                                                                <option>仅系统</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </span>
+                                            </h2>
+                                        </div>
+                                        <ul id="sub-filter" class="sub-filter">
+                                            <li>
+                                                <div class="facet">
+                                                    <div class="days oBor">
+                                                        <select>
+                                                            <option>在最近</option>
+                                                            <option>今天</option>
+                                                            <option>本周</option>
+                                                            <option>本月</option>
+                                                            <option>今年</option>
+                                                            <option>在过去30天</option>
+                                                            <option>在过去60天</option>
+                                                            <option>在过去90天</option>
+                                                            <option>今天</option>
+                                                            <option>直到现在</option>
+                                                        </select>
+                                                    </div>
+                                                    <input type="text" value="2" class="Addend">
+                                                    <div class="oBor" id="seldays">
+                                                        <select>
+                                                            <option>天</option>
+                                                            <option>周</option>
+                                                            <option>月</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="oneFacet">
+                                    <div class="facetCon">
+                                        <div class="facet-title">
+                                            <h2 class="unit">
+                                                <span>
+                                                    <label class="fL">
+                                                        <span class="vam">
+                                                            <i></i>记录操作</span>
+                                                    </label>
+                                                    <div id="Rec" class="Rec">
+                                                        <p class="xima">通过</p>
+                                                        <div class="oBor">
+                                                            <select name="" id="touchSource">
+                                                                <option>用户和系统</option>
+                                                                <option>用户或系统</option>
+                                                                <option>用户</option>
+                                                                <option>系统</option>
+                                                                <option>仅用户</option>
+                                                                <option>仅系统</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </span>
+                                            </h2>
+                                        </div>
+                                        <ul id="sub-filter" class="sub-filter">
+                                            <li>
+                                                <div class="facet">
+                                                    <div class="days oBor">
+                                                        <select>
+                                                            <option>在最近</option>
+                                                            <option>今天</option>
+                                                            <option>本周</option>
+                                                            <option>本月</option>
+                                                            <option>今年</option>
+                                                            <option>在过去30天</option>
+                                                            <option>在过去60天</option>
+                                                            <option>在过去90天</option>
+                                                            <option>今天</option>
+                                                            <option>直到现在</option>
+                                                        </select>
+                                                    </div>
+                                                    <input type="text" value="2" class="Addend">
+                                                    <div class="oBor" id="seldays">
+                                                        <select>
+                                                            <option>天</option>
+                                                            <option>周</option>
+                                                            <option>月</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="oneFacet">
+                                    <div class="facetCon">
+                                        <div class="facet-title">
+                                            <h2 class="unit">
+                                                <span>
+                                                    <label class="fL">
+                                                        <span class="vam">
+                                                            <i></i>相关的操作记录</span>
+                                                    </label>
+                                                    <div id="Rec" class="Rec">
+                                                        <p class="xima">通过</p>
+                                                        <div class="oBor">
+                                                            <select name="" id="touchSource">
+                                                                <option>用户和系统</option>
+                                                                <option>用户或系统</option>
+                                                                <option>用户</option>
+                                                                <option>系统</option>
+                                                                <option>仅用户</option>
+                                                                <option>仅系统</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </span>
+                                            </h2>
+                                        </div>
+                                        <ul id="sub-filter" class="sub-filter">
+                                            <li>
+                                                <div class="facet">
+                                                    <div class="days oBor">
+                                                        <select>
+                                                            <option>在最近</option>
+                                                            <option>今天</option>
+                                                            <option>本周</option>
+                                                            <option>本月</option>
+                                                            <option>今年</option>
+                                                            <option>在过去30天</option>
+                                                            <option>在过去60天</option>
+                                                            <option>在过去90天</option>
+                                                            <option>今天</option>
+                                                            <option>直到现在</option>
+                                                        </select>
+                                                    </div>
+                                                    <input type="text" value="2" class="Addend">
+                                                    <div class="oBor" id="seldays">
+                                                        <select>
+                                                            <option>天</option>
+                                                            <option>周</option>
+                                                            <option>月</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="oneFacet">
+                                    <div class="facetCon">
+                                        <div class="facet-title">
+                                            <h2 class="unit">
+                                                <span>
+                                                    <label class="fL">
+                                                        <span class="vam">
+                                                            <i></i>邮件状态</span>
+                                                    </label>
+                                                    <div id="Rec" class="Rec">
+                                                        <p class="xima">通过</p>
+                                                        <div class="oBor">
+                                                            <select name="" id="touchSource">
+                                                                <option>用户和系统</option>
+                                                                <option>用户或系统</option>
+                                                                <option>用户</option>
+                                                                <option>系统</option>
+                                                                <option>仅用户</option>
+                                                                <option>仅系统</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </span>
+                                            </h2>
+                                        </div>
+                                        <ul id="sub-filter" class="sub-filter">
+                                            <li>
+                                                <div class="facet">
+                                                    <div class="days oBor">
+                                                        <select>
+                                                            <option>在最近</option>
+                                                            <option>今天</option>
+                                                            <option>本周</option>
+                                                            <option>本月</option>
+                                                            <option>今年</option>
+                                                            <option>在过去30天</option>
+                                                            <option>在过去60天</option>
+                                                            <option>在过去90天</option>
+                                                            <option>今天</option>
+                                                            <option>直到现在</option>
+                                                        </select>
+                                                    </div>
+                                                    <input type="text" value="2" class="Addend">
+                                                    <div class="oBor" id="seldays">
+                                                        <select>
+                                                            <option>天</option>
+                                                            <option>周</option>
+                                                            <option>月</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="oneFacet">
+                                    <div class="facetCon">
+                                        <div class="facet-title">
+                                            <h2 class="unit">
+                                                <span>
+                                                    <label class="fL">
+                                                        <span class="vam">
+                                                            <i></i>任务、通话及活动</span>
+                                                    </label>
+                                                    <div id="Rec" class="Rec">
+                                                        <p class="xima">通过</p>
+                                                        <div class="oBor">
+                                                            <select name="" id="touchSource">
+                                                                <option>用户和系统</option>
+                                                                <option>用户或系统</option>
+                                                                <option>用户</option>
+                                                                <option>系统</option>
+                                                                <option>仅用户</option>
+                                                                <option>仅系统</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </span>
+                                            </h2>
+                                        </div>
+                                        <ul id="sub-filter" class="sub-filter">
+                                            <li>
+                                                <div class="facet">
+                                                    <div class="days oBor">
+                                                        <select>
+                                                            <option>在最近</option>
+                                                            <option>今天</option>
+                                                            <option>本周</option>
+                                                            <option>本月</option>
+                                                            <option>今年</option>
+                                                            <option>在过去30天</option>
+                                                            <option>在过去60天</option>
+                                                            <option>在过去90天</option>
+                                                            <option>今天</option>
+                                                            <option>直到现在</option>
+                                                        </select>
+                                                    </div>
+                                                    <input type="text" value="2" class="Addend">
+                                                    <div class="oBor" id="seldays">
+                                                        <select>
+                                                            <option>天</option>
+                                                            <option>周</option>
+                                                            <option>月</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="oneFacet">
+                                    <div class="facetCon">
+                                        <div class="facet-title">
+                                            <h2 class="unit">
+                                                <span>
+                                                    <label class="fL">
+                                                        <span class="vam">
+                                                            <i></i>备注</span>
+                                                    </label>
+                                                    <div id="Rec" class="Rec">
+                                                        <p class="xima">通过</p>
+                                                        <div class="oBor">
+                                                            <select name="" id="touchSource">
+                                                                <option>用户和系统</option>
+                                                                <option>用户或系统</option>
+                                                                <option>用户</option>
+                                                                <option>系统</option>
+                                                                <option>仅用户</option>
+                                                                <option>仅系统</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </span>
+                                            </h2>
+                                        </div>
+                                        <ul id="sub-filter" class="sub-filter">
+                                            <li>
+                                                <div class="facet">
+                                                    <div class="days oBor">
+                                                        <select>
+                                                            <option>在最近</option>
+                                                            <option>今天</option>
+                                                            <option>本周</option>
+                                                            <option>本月</option>
+                                                            <option>今年</option>
+                                                            <option>在过去30天</option>
+                                                            <option>在过去60天</option>
+                                                            <option>在过去90天</option>
+                                                            <option>今天</option>
+                                                            <option>直到现在</option>
+                                                        </select>
+                                                    </div>
+                                                    <input type="text" value="2" class="Addend">
+                                                    <div class="oBor" id="seldays">
+                                                        <select>
+                                                            <option>天</option>
+                                                            <option>周</option>
+                                                            <option>月</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="oneFacet">
+                                    <div class="facetCon">
+                                        <div class="facet-title">
+                                            <h2 class="unit">
+                                                <span>
+                                                    <label class="fL">
+                                                        <span class="vam">
+                                                            <i></i>交易</span>
+                                                    </label>
+                                                    <div id="Rec" class="Rec">
+                                                        <p class="xima">通过</p>
+                                                        <div class="oBor">
+                                                            <select name="" id="touchSource">
+                                                                <option>用户和系统</option>
+                                                                <option>用户或系统</option>
+                                                                <option>用户</option>
+                                                                <option>系统</option>
+                                                                <option>仅用户</option>
+                                                                <option>仅系统</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </span>
+                                            </h2>
+                                        </div>
+                                        <ul id="sub-filter" class="sub-filter">
+                                            <li>
+                                                <div class="facet">
+                                                    <div class="days oBor">
+                                                        <select>
+                                                            <option>在最近</option>
+                                                            <option>今天</option>
+                                                            <option>本周</option>
+                                                            <option>本月</option>
+                                                            <option>今年</option>
+                                                            <option>在过去30天</option>
+                                                            <option>在过去60天</option>
+                                                            <option>在过去90天</option>
+                                                            <option>今天</option>
+                                                            <option>直到现在</option>
+                                                        </select>
+                                                    </div>
+                                                    <input type="text" value="2" class="Addend">
+                                                    <div class="oBor" id="seldays">
+                                                        <select>
+                                                            <option>天</option>
+                                                            <option>周</option>
+                                                            <option>月</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="oneFacet">
+                                    <div class="facetCon">
+                                        <div class="facet-title">
+                                            <h2 class="unit">
+                                                <span>
+                                                    <label class="fL">
+                                                        <span class="vam">
+                                                            <i></i>市场影响</span>
+                                                    </label>
+                                                    <div id="Rec" class="Rec">
+                                                        <p class="xima">通过</p>
+                                                        <div class="oBor">
+                                                            <select name="" id="touchSource">
+                                                                <option>用户和系统</option>
+                                                                <option>用户或系统</option>
+                                                                <option>用户</option>
+                                                                <option>系统</option>
+                                                                <option>仅用户</option>
+                                                                <option>仅系统</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </span>
+                                            </h2>
+                                        </div>
+                                        <ul id="sub-filter" class="sub-filter">
+                                            <li>
+                                                <div class="facet">
+                                                    <div class="days oBor">
+                                                        <select>
+                                                            <option>在最近</option>
+                                                            <option>今天</option>
+                                                            <option>本周</option>
+                                                            <option>本月</option>
+                                                            <option>今年</option>
+                                                            <option>在过去30天</option>
+                                                            <option>在过去60天</option>
+                                                            <option>在过去90天</option>
+                                                            <option>今天</option>
+                                                            <option>直到现在</option>
+                                                        </select>
+                                                    </div>
+                                                    <input type="text" value="2" class="Addend">
+                                                    <div class="oBor" id="seldays">
+                                                        <select>
+                                                            <option>天</option>
+                                                            <option>周</option>
+                                                            <option>月</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="oneFacet">
+                                    <div class="facetCon">
+                                        <div class="facet-title">
+                                            <h2 class="unit">
+                                                <span>
+                                                    <label class="fL">
+                                                        <span class="vam">
+                                                            <i></i>电话</span>
+                                                    </label>
+                                                    <div id="Rec" class="Rec">
+                                                        <p class="xima">通过</p>
+                                                        <div class="oBor">
+                                                            <select name="" id="touchSource">
+                                                                <option>用户和系统</option>
+                                                                <option>用户或系统</option>
+                                                                <option>用户</option>
+                                                                <option>系统</option>
+                                                                <option>仅用户</option>
+                                                                <option>仅系统</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </span>
+                                            </h2>
+                                        </div>
+                                        <ul id="sub-filter" class="sub-filter">
+                                            <li>
+                                                <div class="facet">
+                                                    <div class="days oBor">
+                                                        <select>
+                                                            <option>在最近</option>
+                                                            <option>今天</option>
+                                                            <option>本周</option>
+                                                            <option>本月</option>
+                                                            <option>今年</option>
+                                                            <option>在过去30天</option>
+                                                            <option>在过去60天</option>
+                                                            <option>在过去90天</option>
+                                                            <option>今天</option>
+                                                            <option>直到现在</option>
+                                                        </select>
+                                                    </div>
+                                                    <input type="text" value="2" class="Addend">
+                                                    <div class="oBor" id="seldays">
+                                                        <select>
+                                                            <option>天</option>
+                                                            <option>周</option>
+                                                            <option>月</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="oneFacet">
+                                    <div class="facetCon">
+                                        <div class="facet-title">
+                                            <h2 class="unit">
+                                                <span>
+                                                    <label class="fL">
+                                                        <span class="vam">
+                                                            <i></i>传真</span>
+                                                    </label>
+                                                    <div id="Rec" class="Rec">
+                                                        <p class="xima">通过</p>
+                                                        <div class="oBor">
+                                                            <select name="" id="touchSource">
+                                                                <option>用户和系统</option>
+                                                                <option>用户或系统</option>
+                                                                <option>用户</option>
+                                                                <option>系统</option>
+                                                                <option>仅用户</option>
+                                                                <option>仅系统</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </span>
+                                            </h2>
+                                        </div>
+                                        <ul id="sub-filter" class="sub-filter">
+                                            <li>
+                                                <div class="facet">
+                                                    <div class="days oBor">
+                                                        <select>
+                                                            <option>在最近</option>
+                                                            <option>今天</option>
+                                                            <option>本周</option>
+                                                            <option>本月</option>
+                                                            <option>今年</option>
+                                                            <option>在过去30天</option>
+                                                            <option>在过去60天</option>
+                                                            <option>在过去90天</option>
+                                                            <option>今天</option>
+                                                            <option>直到现在</option>
+                                                        </select>
+                                                    </div>
+                                                    <input type="text" value="2" class="Addend">
+                                                    <div class="oBor" id="seldays">
+                                                        <select>
+                                                            <option>天</option>
+                                                            <option>周</option>
+                                                            <option>月</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="oneFacet">
+                                    <div class="facetCon">
+                                        <div class="facet-title">
+                                            <h2 class="unit">
+                                                <span>
+                                                    <label class="fL">
+                                                        <span class="vam">
+                                                            <i></i>住宅电话</span>
+                                                    </label>
+                                                    <div id="Rec" class="Rec">
+                                                        <p class="xima">通过</p>
+                                                        <div class="oBor">
+                                                            <select name="" id="touchSource">
+                                                                <option>用户和系统</option>
+                                                                <option>用户或系统</option>
+                                                                <option>用户</option>
+                                                                <option>系统</option>
+                                                                <option>仅用户</option>
+                                                                <option>仅系统</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </span>
+                                            </h2>
+                                        </div>
+                                        <ul id="sub-filter" class="sub-filter">
+                                            <li>
+                                                <div class="facet">
+                                                    <div class="days oBor">
+                                                        <select>
+                                                            <option>在最近</option>
+                                                            <option>今天</option>
+                                                            <option>本周</option>
+                                                            <option>本月</option>
+                                                            <option>今年</option>
+                                                            <option>在过去30天</option>
+                                                            <option>在过去60天</option>
+                                                            <option>在过去90天</option>
+                                                            <option>今天</option>
+                                                            <option>直到现在</option>
+                                                        </select>
+                                                    </div>
+                                                    <input type="text" value="2" class="Addend">
+                                                    <div class="oBor" id="seldays">
+                                                        <select>
+                                                            <option>天</option>
+                                                            <option>周</option>
+                                                            <option>月</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="oneFacet">
+                                    <div class="facetCon">
+                                        <div class="facet-title">
+                                            <h2 class="unit">
+                                                <span>
+                                                    <label class="fL">
+                                                        <span class="vam">
+                                                            <i></i>供货商地址</span>
+                                                    </label>
+                                                    <div id="Rec" class="Rec">
+                                                        <p class="xima">通过</p>
+                                                        <div class="oBor">
+                                                            <select name="" id="touchSource">
+                                                                <option>用户和系统</option>
+                                                                <option>用户或系统</option>
+                                                                <option>用户</option>
+                                                                <option>系统</option>
+                                                                <option>仅用户</option>
+                                                                <option>仅系统</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </span>
+                                            </h2>
+                                        </div>
+                                        <ul id="sub-filter" class="sub-filter">
+                                            <li>
+                                                <div class="facet">
+                                                    <div class="days oBor">
+                                                        <select>
+                                                            <option>在最近</option>
+                                                            <option>今天</option>
+                                                            <option>本周</option>
+                                                            <option>本月</option>
+                                                            <option>今年</option>
+                                                            <option>在过去30天</option>
+                                                            <option>在过去60天</option>
+                                                            <option>在过去90天</option>
+                                                            <option>今天</option>
+                                                            <option>直到现在</option>
+                                                        </select>
+                                                    </div>
+                                                    <input type="text" value="2" class="Addend">
+                                                    <div class="oBor" id="seldays">
+                                                        <select>
+                                                            <option>天</option>
+                                                            <option>周</option>
+                                                            <option>月</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="oneFacet">
+                                    <div class="facetCon">
+                                        <div class="facet-title">
+                                            <h2 class="unit">
+                                                <span>
+                                                    <label class="fL">
+                                                        <span class="vam">
+                                                            <i></i>联系人所有者</span>
+                                                    </label>
+                                                    <div id="Rec" class="Rec">
+                                                        <p class="xima">通过</p>
+                                                        <div class="oBor">
+                                                            <select name="" id="touchSource">
+                                                                <option>用户和系统</option>
+                                                                <option>用户或系统</option>
+                                                                <option>用户</option>
+                                                                <option>系统</option>
+                                                                <option>仅用户</option>
+                                                                <option>仅系统</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </span>
+                                            </h2>
+                                        </div>
+                                        <ul id="sub-filter" class="sub-filter">
+                                            <li>
+                                                <div class="facet">
+                                                    <div class="days oBor">
+                                                        <select>
+                                                            <option>在最近</option>
+                                                            <option>今天</option>
+                                                            <option>本周</option>
+                                                            <option>本月</option>
+                                                            <option>今年</option>
+                                                            <option>在过去30天</option>
+                                                            <option>在过去60天</option>
+                                                            <option>在过去90天</option>
+                                                            <option>今天</option>
+                                                            <option>直到现在</option>
+                                                        </select>
+                                                    </div>
+                                                    <input type="text" value="2" class="Addend">
+                                                    <div class="oBor" id="seldays">
+                                                        <select>
+                                                            <option>天</option>
+                                                            <option>周</option>
+                                                            <option>月</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="oneFacet">
+                                    <div class="facetCon">
+                                        <div class="facet-title">
+                                            <h2 class="unit">
+                                                <span>
+                                                    <label class="fL">
+                                                        <span class="vam">
+                                                            <i></i>修改时间</span>
+                                                    </label>
+                                                    <div id="Rec" class="Rec">
+                                                        <p class="xima">通过</p>
+                                                        <div class="oBor">
+                                                            <select name="" id="touchSource">
+                                                                <option>用户和系统</option>
+                                                                <option>用户或系统</option>
+                                                                <option>用户</option>
+                                                                <option>系统</option>
+                                                                <option>仅用户</option>
+                                                                <option>仅系统</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </span>
+                                            </h2>
+                                        </div>
+                                        <ul id="sub-filter" class="sub-filter">
+                                            <li>
+                                                <div class="facet">
+                                                    <div class="days oBor">
+                                                        <select>
+                                                            <option>在最近</option>
+                                                            <option>今天</option>
+                                                            <option>本周</option>
+                                                            <option>本月</option>
+                                                            <option>今年</option>
+                                                            <option>在过去30天</option>
+                                                            <option>在过去60天</option>
+                                                            <option>在过去90天</option>
+                                                            <option>今天</option>
+                                                            <option>直到现在</option>
+                                                        </select>
+                                                    </div>
+                                                    <input type="text" value="2" class="Addend">
+                                                    <div class="oBor" id="seldays">
+                                                        <select>
+                                                            <option>天</option>
+                                                            <option>周</option>
+                                                            <option>月</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="oneFacet">
+                                    <div class="facetCon">
+                                        <div class="facet-title">
+                                            <h2 class="unit">
+                                                <span>
+                                                    <label class="fL">
+                                                        <span class="vam">
+                                                            <i></i>修改者</span>
+                                                    </label>
+                                                    <div id="Rec" class="Rec">
+                                                        <p class="xima">通过</p>
+                                                        <div class="oBor">
+                                                            <select name="" id="touchSource">
+                                                                <option>用户和系统</option>
+                                                                <option>用户或系统</option>
+                                                                <option>用户</option>
+                                                                <option>系统</option>
+                                                                <option>仅用户</option>
+                                                                <option>仅系统</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </span>
+                                            </h2>
+                                        </div>
+                                        <ul id="sub-filter" class="sub-filter">
+                                            <li>
+                                                <div class="facet">
+                                                    <div class="days oBor">
+                                                        <select>
+                                                            <option>在最近</option>
+                                                            <option>今天</option>
+                                                            <option>本周</option>
+                                                            <option>本月</option>
+                                                            <option>今年</option>
+                                                            <option>在过去30天</option>
+                                                            <option>在过去60天</option>
+                                                            <option>在过去90天</option>
+                                                            <option>今天</option>
+                                                            <option>直到现在</option>
+                                                        </select>
+                                                    </div>
+                                                    <input type="text" value="2" class="Addend">
+                                                    <div class="oBor" id="seldays">
+                                                        <select>
+                                                            <option>天</option>
+                                                            <option>周</option>
+                                                            <option>月</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="oneFacet">
+                                    <div class="facetCon">
+                                        <div class="facet-title">
+                                            <h2 class="unit">
+                                                <span>
+                                                    <label class="fL">
+                                                        <span class="vam">
+                                                            <i></i>受影响的记录</span>
+                                                    </label>
+                                                    <div id="Rec" class="Rec">
+                                                        <p class="xima">通过</p>
+                                                        <div class="oBor">
+                                                            <select name="" id="touchSource">
+                                                                <option>用户和系统</option>
+                                                                <option>用户或系统</option>
+                                                                <option>用户</option>
+                                                                <option>系统</option>
+                                                                <option>仅用户</option>
+                                                                <option>仅系统</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </span>
+                                            </h2>
+                                        </div>
+                                        <ul id="sub-filter" class="sub-filter">
+                                            <li>
+                                                <div class="facet">
+                                                    <div class="days oBor">
+                                                        <select>
+                                                            <option>在最近</option>
+                                                            <option>今天</option>
+                                                            <option>本周</option>
+                                                            <option>本月</option>
+                                                            <option>今年</option>
+                                                            <option>在过去30天</option>
+                                                            <option>在过去60天</option>
+                                                            <option>在过去90天</option>
+                                                            <option>今天</option>
+                                                            <option>直到现在</option>
+                                                        </select>
+                                                    </div>
+                                                    <input type="text" value="2" class="Addend">
+                                                    <div class="oBor" id="seldays">
+                                                        <select>
+                                                            <option>天</option>
+                                                            <option>周</option>
+                                                            <option>月</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="oneFacet">
+                                    <div class="facetCon">
+                                        <div class="facet-title">
+                                            <h2 class="unit">
+                                                <span>
+                                                    <label class="fL">
+                                                        <span class="vam">
+                                                            <i></i>受影响的记录</span>
+                                                    </label>
+                                                    <div id="Rec" class="Rec">
+                                                        <p class="xima">通过</p>
+                                                        <div class="oBor">
+                                                            <select name="" id="touchSource">
+                                                                <option>用户和系统</option>
+                                                                <option>用户或系统</option>
+                                                                <option>用户</option>
+                                                                <option>系统</option>
+                                                                <option>仅用户</option>
+                                                                <option>仅系统</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </span>
+                                            </h2>
+                                        </div>
+                                        <ul id="sub-filter" class="sub-filter">
+                                            <li>
+                                                <div class="facet">
+                                                    <div class="days oBor">
+                                                        <select>
+                                                            <option>在最近</option>
+                                                            <option>今天</option>
+                                                            <option>本周</option>
+                                                            <option>本月</option>
+                                                            <option>今年</option>
+                                                            <option>在过去30天</option>
+                                                            <option>在过去60天</option>
+                                                            <option>在过去90天</option>
+                                                            <option>今天</option>
+                                                            <option>直到现在</option>
+                                                        </select>
+                                                    </div>
+                                                    <input type="text" value="2" class="Addend">
+                                                    <div class="oBor" id="seldays">
+                                                        <select>
+                                                            <option>天</option>
+                                                            <option>周</option>
+                                                            <option>月</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="oneFacet">
+                                    <div class="facetCon">
+                                        <div class="facet-title">
+                                            <h2 class="unit">
+                                                <span>
+                                                    <label class="fL">
+                                                        <span class="vam">
+                                                            <i></i>受影响的记录</span>
+                                                    </label>
+                                                    <div id="Rec" class="Rec">
+                                                        <p class="xima">通过</p>
+                                                        <div class="oBor">
+                                                            <select name="" id="touchSource">
+                                                                <option>用户和系统</option>
+                                                                <option>用户或系统</option>
+                                                                <option>用户</option>
+                                                                <option>系统</option>
+                                                                <option>仅用户</option>
+                                                                <option>仅系统</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </span>
+                                            </h2>
+                                        </div>
+                                        <ul id="sub-filter" class="sub-filter">
+                                            <li>
+                                                <div class="facet">
+                                                    <div class="days oBor">
+                                                        <select>
+                                                            <option>在最近</option>
+                                                            <option>今天</option>
+                                                            <option>本周</option>
+                                                            <option>本月</option>
+                                                            <option>今年</option>
+                                                            <option>在过去30天</option>
+                                                            <option>在过去60天</option>
+                                                            <option>在过去90天</option>
+                                                            <option>今天</option>
+                                                            <option>直到现在</option>
+                                                        </select>
+                                                    </div>
+                                                    <input type="text" value="2" class="Addend">
+                                                    <div class="oBor" id="seldays">
+                                                        <select>
+                                                            <option>天</option>
+                                                            <option>周</option>
+                                                            <option>月</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="oneFacet">
+                                    <div class="facetCon">
+                                        <div class="facet-title">
+                                            <h2 class="unit">
+                                                <span>
+                                                    <label class="fL">
+                                                        <span class="vam">
+                                                            <i></i>受影响的记录</span>
+                                                    </label>
+                                                    <div id="Rec" class="Rec">
+                                                        <p class="xima">通过</p>
+                                                        <div class="oBor">
+                                                            <select name="" id="touchSource">
+                                                                <option>用户和系统</option>
+                                                                <option>用户或系统</option>
+                                                                <option>用户</option>
+                                                                <option>系统</option>
+                                                                <option>仅用户</option>
+                                                                <option>仅系统</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </span>
+                                            </h2>
+                                        </div>
+                                        <ul id="sub-filter" class="sub-filter">
+                                            <li>
+                                                <div class="facet">
+                                                    <div class="days oBor">
+                                                        <select>
+                                                            <option>在最近</option>
+                                                            <option>今天</option>
+                                                            <option>本周</option>
+                                                            <option>本月</option>
+                                                            <option>今年</option>
+                                                            <option>在过去30天</option>
+                                                            <option>在过去60天</option>
+                                                            <option>在过去90天</option>
+                                                            <option>今天</option>
+                                                            <option>直到现在</option>
+                                                        </select>
+                                                    </div>
+                                                    <input type="text" value="2" class="Addend">
+                                                    <div class="oBor" id="seldays">
+                                                        <select>
+                                                            <option>天</option>
+                                                            <option>周</option>
+                                                            <option>月</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="oneFacet">
+                                    <div class="facetCon">
+                                        <div class="facet-title">
+                                            <h2 class="unit">
+                                                <span>
+                                                    <label class="fL">
+                                                        <span class="vam">
+                                                            <i></i>受影响的记录</span>
+                                                    </label>
+                                                    <div id="Rec" class="Rec">
+                                                        <p class="xima">通过</p>
+                                                        <div class="oBor">
+                                                            <select name="" id="touchSource">
+                                                                <option>用户和系统</option>
+                                                                <option>用户或系统</option>
+                                                                <option>用户</option>
+                                                                <option>系统</option>
+                                                                <option>仅用户</option>
+                                                                <option>仅系统</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </span>
+                                            </h2>
+                                        </div>
+                                        <ul id="sub-filter" class="sub-filter">
+                                            <li>
+                                                <div class="facet">
+                                                    <div class="days oBor">
+                                                        <select>
+                                                            <option>在最近</option>
+                                                            <option>今天</option>
+                                                            <option>本周</option>
+                                                            <option>本月</option>
+                                                            <option>今年</option>
+                                                            <option>在过去30天</option>
+                                                            <option>在过去60天</option>
+                                                            <option>在过去90天</option>
+                                                            <option>今天</option>
+                                                            <option>直到现在</option>
+                                                        </select>
+                                                    </div>
+                                                    <input type="text" value="2" class="Addend">
+                                                    <div class="oBor" id="seldays">
+                                                        <select>
+                                                            <option>天</option>
+                                                            <option>周</option>
+                                                            <option>月</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="oneFacet">
+                                    <div class="facetCon">
+                                        <div class="facet-title">
+                                            <h2 class="unit">
+                                                <span>
+                                                    <label class="fL">
+                                                        <span class="vam">
+                                                            <i></i>受影响的记录</span>
+                                                    </label>
+                                                    <div id="Rec" class="Rec">
+                                                        <p class="xima">通过</p>
+                                                        <div class="oBor">
+                                                            <select name="" id="touchSource">
+                                                                <option>用户和系统</option>
+                                                                <option>用户或系统</option>
+                                                                <option>用户</option>
+                                                                <option>系统</option>
+                                                                <option>仅用户</option>
+                                                                <option>仅系统</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </span>
+                                            </h2>
+                                        </div>
+                                        <ul id="sub-filter" class="sub-filter">
+                                            <li>
+                                                <div class="facet">
+                                                    <div class="days oBor">
+                                                        <select>
+                                                            <option>在最近</option>
+                                                            <option>今天</option>
+                                                            <option>本周</option>
+                                                            <option>本月</option>
+                                                            <option>今年</option>
+                                                            <option>在过去30天</option>
+                                                            <option>在过去60天</option>
+                                                            <option>在过去90天</option>
+                                                            <option>今天</option>
+                                                            <option>直到现在</option>
+                                                        </select>
+                                                    </div>
+                                                    <input type="text" value="2" class="Addend">
+                                                    <div class="oBor" id="seldays">
+                                                        <select>
+                                                            <option>天</option>
+                                                            <option>周</option>
+                                                            <option>月</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="oneFacet">
+                                    <div class="facetCon">
+                                        <div class="facet-title">
+                                            <h2 class="unit">
+                                                <span>
+                                                    <label class="fL">
+                                                        <span class="vam">
+                                                            <i></i>受影响的记录</span>
+                                                    </label>
+                                                    <div id="Rec" class="Rec">
+                                                        <p class="xima">通过</p>
+                                                        <div class="oBor">
+                                                            <select name="" id="touchSource">
+                                                                <option>用户和系统</option>
+                                                                <option>用户或系统</option>
+                                                                <option>用户</option>
+                                                                <option>系统</option>
+                                                                <option>仅用户</option>
+                                                                <option>仅系统</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </span>
+                                            </h2>
+                                        </div>
+                                        <ul id="sub-filter" class="sub-filter">
+                                            <li>
+                                                <div class="facet">
+                                                    <div class="days oBor">
+                                                        <select>
+                                                            <option>在最近</option>
+                                                            <option>今天</option>
+                                                            <option>本周</option>
+                                                            <option>本月</option>
+                                                            <option>今年</option>
+                                                            <option>在过去30天</option>
+                                                            <option>在过去60天</option>
+                                                            <option>在过去90天</option>
+                                                            <option>今天</option>
+                                                            <option>直到现在</option>
+                                                        </select>
+                                                    </div>
+                                                    <input type="text" value="2" class="Addend">
+                                                    <div class="oBor" id="seldays">
+                                                        <select>
+                                                            <option>天</option>
+                                                            <option>周</option>
+                                                            <option>月</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="oneFacet">
+                                    <div class="facetCon">
+                                        <div class="facet-title">
+                                            <h2 class="unit">
+                                                <span>
+                                                    <label class="fL">
+                                                        <span class="vam">
+                                                            <i></i>受影响的记录</span>
+                                                    </label>
+                                                    <div id="Rec" class="Rec">
+                                                        <p class="xima">通过</p>
+                                                        <div class="oBor">
+                                                            <select name="" id="touchSource">
+                                                                <option>用户和系统</option>
+                                                                <option>用户或系统</option>
+                                                                <option>用户</option>
+                                                                <option>系统</option>
+                                                                <option>仅用户</option>
+                                                                <option>仅系统</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </span>
+                                            </h2>
+                                        </div>
+                                        <ul id="sub-filter" class="sub-filter">
+                                            <li>
+                                                <div class="facet">
+                                                    <div class="days oBor">
+                                                        <select>
+                                                            <option>在最近</option>
+                                                            <option>今天</option>
+                                                            <option>本周</option>
+                                                            <option>本月</option>
+                                                            <option>今年</option>
+                                                            <option>在过去30天</option>
+                                                            <option>在过去60天</option>
+                                                            <option>在过去90天</option>
+                                                            <option>今天</option>
+                                                            <option>直到现在</option>
+                                                        </select>
+                                                    </div>
+                                                    <input type="text" value="2" class="Addend">
+                                                    <div class="oBor" id="seldays">
+                                                        <select>
+                                                            <option>天</option>
+                                                            <option>周</option>
+                                                            <option>月</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="oneFacet">
+                                    <div class="facetCon">
+                                        <div class="facet-title">
+                                            <h2 class="unit">
+                                                <span>
+                                                    <label class="fL">
+                                                        <span class="vam">
+                                                            <i></i>受影响的记录</span>
+                                                    </label>
+                                                    <div id="Rec" class="Rec">
+                                                        <p class="xima">通过</p>
+                                                        <div class="oBor">
+                                                            <select name="" id="touchSource">
+                                                                <option>用户和系统</option>
+                                                                <option>用户或系统</option>
+                                                                <option>用户</option>
+                                                                <option>系统</option>
+                                                                <option>仅用户</option>
+                                                                <option>仅系统</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </span>
+                                            </h2>
+                                        </div>
+                                        <ul id="sub-filter" class="sub-filter">
+                                            <li>
+                                                <div class="facet">
+                                                    <div class="days oBor">
+                                                        <select>
+                                                            <option>在最近</option>
+                                                            <option>今天</option>
+                                                            <option>本周</option>
+                                                            <option>本月</option>
+                                                            <option>今年</option>
+                                                            <option>在过去30天</option>
+                                                            <option>在过去60天</option>
+                                                            <option>在过去90天</option>
+                                                            <option>今天</option>
+                                                            <option>直到现在</option>
+                                                        </select>
+                                                    </div>
+                                                    <input type="text" value="2" class="Addend">
+                                                    <div class="oBor" id="seldays">
+                                                        <select>
+                                                            <option>天</option>
+                                                            <option>周</option>
+                                                            <option>月</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="oneFacet">
+                                    <div class="facetCon">
+                                        <div class="facet-title">
+                                            <h2 class="unit">
+                                                <span>
+                                                    <label class="fL">
+                                                        <span class="vam">
+                                                            <i></i>受影响的记录</span>
+                                                    </label>
+                                                    <div id="Rec" class="Rec">
+                                                        <p class="xima">通过</p>
+                                                        <div class="oBor">
+                                                            <select name="" id="touchSource">
+                                                                <option>用户和系统</option>
+                                                                <option>用户或系统</option>
+                                                                <option>用户</option>
+                                                                <option>系统</option>
+                                                                <option>仅用户</option>
+                                                                <option>仅系统</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </span>
+                                            </h2>
+                                        </div>
+                                        <ul id="sub-filter" class="sub-filter">
+                                            <li>
+                                                <div class="facet">
+                                                    <div class="days oBor">
+                                                        <select>
+                                                            <option>在最近</option>
+                                                            <option>今天</option>
+                                                            <option>本周</option>
+                                                            <option>本月</option>
+                                                            <option>今年</option>
+                                                            <option>在过去30天</option>
+                                                            <option>在过去60天</option>
+                                                            <option>在过去90天</option>
+                                                            <option>今天</option>
+                                                            <option>直到现在</option>
+                                                        </select>
+                                                    </div>
+                                                    <input type="text" value="2" class="Addend">
+                                                    <div class="oBor" id="seldays">
+                                                        <select>
+                                                            <option>天</option>
+                                                            <option>周</option>
+                                                            <option>月</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="oneFacet">
+                                    <div class="facetCon">
+                                        <div class="facet-title">
+                                            <h2 class="unit">
+                                                <span>
+                                                    <label class="fL">
+                                                        <span class="vam">
+                                                            <i></i>受影响的记录</span>
+                                                    </label>
+                                                    <div id="Rec" class="Rec">
+                                                        <p class="xima">通过</p>
+                                                        <div class="oBor">
+                                                            <select name="" id="touchSource">
+                                                                <option>用户和系统</option>
+                                                                <option>用户或系统</option>
+                                                                <option>用户</option>
+                                                                <option>系统</option>
+                                                                <option>仅用户</option>
+                                                                <option>仅系统</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </span>
+                                            </h2>
+                                        </div>
+                                        <ul id="sub-filter" class="sub-filter">
+                                            <li>
+                                                <div class="facet">
+                                                    <div class="days oBor">
+                                                        <select>
+                                                            <option>在最近</option>
+                                                            <option>今天</option>
+                                                            <option>本周</option>
+                                                            <option>本月</option>
+                                                            <option>今年</option>
+                                                            <option>在过去30天</option>
+                                                            <option>在过去60天</option>
+                                                            <option>在过去90天</option>
+                                                            <option>今天</option>
+                                                            <option>直到现在</option>
+                                                        </select>
+                                                    </div>
+                                                    <input type="text" value="2" class="Addend">
+                                                    <div class="oBor" id="seldays">
+                                                        <select>
+                                                            <option>天</option>
+                                                            <option>周</option>
+                                                            <option>月</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="oneFacet">
+                                    <div class="facetCon">
+                                        <div class="facet-title">
+                                            <h2 class="unit">
+                                                <span>
+                                                    <label class="fL">
+                                                        <span class="vam">
+                                                            <i></i>受影响的记录</span>
+                                                    </label>
+                                                    <div id="Rec" class="Rec">
+                                                        <p class="xima">通过</p>
+                                                        <div class="oBor">
+                                                            <select name="" id="touchSource">
+                                                                <option>用户和系统</option>
+                                                                <option>用户或系统</option>
+                                                                <option>用户</option>
+                                                                <option>系统</option>
+                                                                <option>仅用户</option>
+                                                                <option>仅系统</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </span>
+                                            </h2>
+                                        </div>
+                                        <ul id="sub-filter" class="sub-filter">
+                                            <li>
+                                                <div class="facet">
+                                                    <div class="days oBor">
+                                                        <select>
+                                                            <option>在最近</option>
+                                                            <option>今天</option>
+                                                            <option>本周</option>
+                                                            <option>本月</option>
+                                                            <option>今年</option>
+                                                            <option>在过去30天</option>
+                                                            <option>在过去60天</option>
+                                                            <option>在过去90天</option>
+                                                            <option>今天</option>
+                                                            <option>直到现在</option>
+                                                        </select>
+                                                    </div>
+                                                    <input type="text" value="2" class="Addend">
+                                                    <div class="oBor" id="seldays">
+                                                        <select>
+                                                            <option>天</option>
+                                                            <option>周</option>
+                                                            <option>月</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="oneFacet">
+                                    <div class="facetCon">
+                                        <div class="facet-title">
+                                            <h2 class="unit">
+                                                <span>
+                                                    <label class="fL">
+                                                        <span class="vam">
+                                                            <i></i>受影响的记录</span>
+                                                    </label>
+                                                    <div id="Rec" class="Rec">
+                                                        <p class="xima">通过</p>
+                                                        <div class="oBor">
+                                                            <select name="" id="touchSource">
+                                                                <option>用户和系统</option>
+                                                                <option>用户或系统</option>
+                                                                <option>用户</option>
+                                                                <option>系统</option>
+                                                                <option>仅用户</option>
+                                                                <option>仅系统</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </span>
+                                            </h2>
+                                        </div>
+                                        <ul id="sub-filter" class="sub-filter">
+                                            <li>
+                                                <div class="facet">
+                                                    <div class="days oBor">
+                                                        <select>
+                                                            <option>在最近</option>
+                                                            <option>今天</option>
+                                                            <option>本周</option>
+                                                            <option>本月</option>
+                                                            <option>今年</option>
+                                                            <option>在过去30天</option>
+                                                            <option>在过去60天</option>
+                                                            <option>在过去90天</option>
+                                                            <option>今天</option>
+                                                            <option>直到现在</option>
+                                                        </select>
+                                                    </div>
+                                                    <input type="text" value="2" class="Addend">
+                                                    <div class="oBor" id="seldays">
+                                                        <select>
+                                                            <option>天</option>
+                                                            <option>周</option>
+                                                            <option>月</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="oneFacet">
+                                    <div class="facetCon">
+                                        <div class="facet-title">
+                                            <h2 class="unit">
+                                                <span>
+                                                    <label class="fL">
+                                                        <span class="vam">
+                                                            <i></i>受影响的记录</span>
+                                                    </label>
+                                                    <div id="Rec" class="Rec">
+                                                        <p class="xima">通过</p>
+                                                        <div class="oBor">
+                                                            <select name="" id="touchSource">
+                                                                <option>用户和系统</option>
+                                                                <option>用户或系统</option>
+                                                                <option>用户</option>
+                                                                <option>系统</option>
+                                                                <option>仅用户</option>
+                                                                <option>仅系统</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </span>
+                                            </h2>
+                                        </div>
+                                        <ul id="sub-filter" class="sub-filter">
+                                            <li>
+                                                <div class="facet">
+                                                    <div class="days oBor">
+                                                        <select>
+                                                            <option>在最近</option>
+                                                            <option>今天</option>
+                                                            <option>本周</option>
+                                                            <option>本月</option>
+                                                            <option>今年</option>
+                                                            <option>在过去30天</option>
+                                                            <option>在过去60天</option>
+                                                            <option>在过去90天</option>
+                                                            <option>今天</option>
+                                                            <option>直到现在</option>
+                                                        </select>
+                                                    </div>
+                                                    <input type="text" value="2" class="Addend">
+                                                    <div class="oBor" id="seldays">
+                                                        <select>
+                                                            <option>天</option>
+                                                            <option>周</option>
+                                                            <option>月</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="oneFacet">
+                                    <div class="facetCon">
+                                        <div class="facet-title">
+                                            <h2 class="unit">
+                                                <span>
+                                                    <label class="fL">
+                                                        <span class="vam">
+                                                            <i></i>受影响的记录</span>
+                                                    </label>
+                                                    <div id="Rec" class="Rec">
+                                                        <p class="xima">通过</p>
+                                                        <div class="oBor">
+                                                            <select name="" id="touchSource">
+                                                                <option>用户和系统</option>
+                                                                <option>用户或系统</option>
+                                                                <option>用户</option>
+                                                                <option>系统</option>
+                                                                <option>仅用户</option>
+                                                                <option>仅系统</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </span>
+                                            </h2>
+                                        </div>
+                                        <ul id="sub-filter" class="sub-filter">
+                                            <li>
+                                                <div class="facet">
+                                                    <div class="days oBor">
+                                                        <select>
+                                                            <option>在最近</option>
+                                                            <option>今天</option>
+                                                            <option>本周</option>
+                                                            <option>本月</option>
+                                                            <option>今年</option>
+                                                            <option>在过去30天</option>
+                                                            <option>在过去60天</option>
+                                                            <option>在过去90天</option>
+                                                            <option>今天</option>
+                                                            <option>直到现在</option>
+                                                        </select>
+                                                    </div>
+                                                    <input type="text" value="2" class="Addend">
+                                                    <div class="oBor" id="seldays">
+                                                        <select>
+                                                            <option>天</option>
+                                                            <option>周</option>
+                                                            <option>月</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="r-scrool">
+                                <div class="bar-y"></div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="rightBor">
+                <!-- <span class="collapse">
+                    <span class=""></span>
+                </span> -->
+                <div class="list-table">
+                    <table border="0" cellpadding="0" cellspacing="0" class="listview">
+                        <thead>
+                            <tr class="tableHead">
+                                <td width="30">
+                                    <button id="addColumn"></button>
+                                </td>
+                                <td width="30">
+                                    <span class="checkAll"></span>
+                                </td>
+                                <td class="mw">线索名称</td>
+                                <td class="mw">公司</td>
+                                <td class="mw">邮箱</td>
+                                <td class="mw">电话</td>
+                                <td class="mw">线索来源</td>
+                                <td class="mw">线索所有者</td>
+                                <td width="30"></td>
+                            </tr>
+                        </thead>
+                        <tbody id="lvTred">
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="bbv">
+                    <div class="layer">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div id="tcDiv">
+                                            &nbsp;&nbsp;共计：<span><b>10</b>&nbsp;&nbsp;</span>
+                                        </div>
+                                    </td>
+                                    <td class="ste">
+                                        <div class="bodyText">
+                                            <div class="newSelect">
+                                                <select>
+                                                    <option>10 每页记录数</option>
+                                                    <option>20 每页记录数</option>
+                                                    <option>30 每页记录数</option>
+                                                    <option>40 每页记录数</option>
+                                                    <option>50 每页记录数</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td width="110" class="scro">
+                                        <table height="25">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="viewbg"></td>
+                                                    <td>
+                                                        <b>1</b>&nbsp;
+                                                        <span class="ltg">到</span>&nbsp;
+                                                        <b> 10 </b>
+                                                    </td>
+                                                    <td class="advan">
+                                                        <input type="button">
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 内容部分 2 -->
+        <div class="cvparents">
+            <div class="kvtlist">
+                <div class="outer-div">
+                    <div class="innerdiv">
+                        <div class="leftConHead">
+                            <div class="per">
+                                <div class="proximas">客户</div>
+                            </div>
+                        </div>
+                        <div class="leftConctn">
+                            <div>
+                                <ul id="ul-Con">
+                                    <li>
+                                        <div class="graybot">
+                                            <div class="InnerInfo">
+                                                <div class="B-box">
+                                                    <span class="Activity"></span>
+                                                    <span class="kanban">
+                                                        <a href="javascript:;">
+                                                                CRM 网络研讨会
+                                                        </a>
+                                                    </span>
+                                                    <span class="grayDate"> 十二月 5,  11:31 上午 - 11:36 上午 </span>
+                                                </div>
+                                                <div class="overfl">
+                                                    <span>
+                                                        <a href="javascript:;"></a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li></li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
+<script type="text/html" id="test">
+    {{if code === 200}}
+    {{each data}}
+    <tr class="tdout">
+            <td width="30">
+                <div class="listEd">
+                    <a class="newditTcon"></a>
+                </div>
+            </td>
+            <td class="lvCb">
+                <span class="checkAll"></span>
+            </td>
+            <td class="mw">
+                <a href="javascript:;" class="link">{{$value.clues_name}}</a>
+            </td>
+            <td class="mw">{{$value.the_company}}</td>
+            <td class="mw">{{$value.email}}</td>
+            <td class="mw">{{$value.phone}}</td>
+            <td class="mw">{{$value.clues_to}}</td>
+            <td class="mw">{{$value.clue_owner}}</td>
+            
+        </tr>
+    {{/each}}
+    {{/if}}
+</script>
+<script src="http://cdn.staticfile.org/artTemplate.js/3.0.1/template.js"></script>
+<script src="http://apps.bdimg.com/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="http://cdn.bootcss.com/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $(".comboBox").click(function () {
+            if (!$(".cvHolder").is(":visible")) {
+                $(".cvHolder").slideDown("slow"); //慢慢展开
+            } else {
+                $(".cvHolder").slideUp("slow");//慢慢收起
+            }
+        })
+        $(".svgImg").click(function () {
+            $(".sugImg").css("background-position", "-23px -100px");
+            $(".svgImg").css("background-position", "-44px -100px");
+            $(".cvBor").show();
+            $(".cvparents").hide();
+        })
+        $(".sugImg").click(function () {
+            $(".sugImg").css("background-position", "-64px -100px");
+            $(".svgImg").css("background-position", "-3px -100px");
+            $(".cvBor").hide();
+            $(".cvparents").show();
+        })
+        $(".lv-filter").click(function () {
+            $(".lv-fil").show();
+            $(".lv-filter").hide();
+        })
+        $("#lv-fil-clear").click(function () {
+            $(".lv-fil").hide();
+            $(".lv-filter").show();
+        })
+        $(".Facet .oneFacet .vam").each(function (index) {
+            $(this).click(function () {
+                if (!$(".Rec").is(":visible")) {
+                    $(".Rec").eq(index).show("slow"); //慢慢展开
+                    $(".sub-filter").eq(index).show("slow"); //慢慢展开
+                    $(".Facet .oneFacet .vam i").eq(index).css("background-position", "-76px -588px");
+                } else {
+                    $(".Rec").eq(index).hide("slow");//慢慢收起
+                    $(".sub-filter").eq(index).hide("slow");//慢慢收起
+                    $(".Facet .oneFacet .vam i").eq(index).css("background-position", "-55px -588px");
+                }
+            })
+        })
+    })
+    // 第二种方法
+    // for (var i = 0; i < $(".Facet .oneFacet .vam").length; i++) {
+    //     (function (arg) {
+    //         $(".Facet .oneFacet .vam")[arg].onclick = function () {
+    //             console.log($(this));
+    //             if (!$(".Rec").is(":visible")) {
+    //                 $(".Rec").eq(arg).show("slow"); //慢慢展开
+    //                 $(".sub-filter").eq(arg).show("slow"); //慢慢展开
+    //                 $(".Facet .oneFacet .vam i").eq(arg).css("background-position", "-76px -588px");
+    //             } else {
+    //                 $(".Rec").eq(arg).hide("slow");//慢慢收起
+    //                 $(".sub-filter").eq(arg).hide("slow");//慢慢收起
+    //                 $(".Facet .oneFacet .vam i").eq(arg).css("background-position", "-55px -588px");
+    //             }
+    //         };
+    //     })(i)
+    // }
+</script>
+<script>
+    $(function () {
+        var Box_Height = $("#lv-scrool").outerHeight();
+        var content_Height = $(".Facet").outerHeight();
+        var bar_Height = $(".r-scrool").outerHeight();
+        var isMouseDown = false;
+        var distance = 0;
+        $("#lv-scrool").mouseover(function () {
+            $(".bar-y").show();
+        }).mouseout(function () {
+            $(".bar-y").hide();
+        });
+
+        //滚动条初始高度；
+        var n = Box_Height / content_Height * bar_Height
+        $(".r-scrool .bar-y").css("height", n)
+        $(".r-scrool").mousedown(down);
+        $(window).mousemove(move);
+        $(window).mouseup(up);
+
+        function down(event) {
+            isMouseDown = true;
+        }
+
+        function move(event) {
+            event.preventDefault();
+            distance = event.pageY - $(".r-scrool").offset().top;
+            if (isMouseDown == true) {
+                scroll(distance)
+            }
+        }
+
+        function up() {
+            isMouseDown = false;
+        }
+        // 滚轮事件；
+        $("#lv-scrool").bind('mousewheel', function (event, delta) {
+            event.preventDefault()
+            var dir = delta > 0 ? 'Up' : 'Down',
+                vel = delta
+            distance = $(".r-scrool .bar-y").offset().top - $("#lv-scrool").offset().top;
+            vel > 0 ? distance -= 10 : distance += 10
+            scroll(distance);
+        });
+
+        function scroll(distance) {
+            if (distance < 0) {
+                distance = 0
+            } else if (distance > bar_Height - $(".r-scrool .bar-y").outerHeight()) {
+                distance = bar_Height - $(".r-scrool .bar-y").outerHeight();
+            }
+            $(".r-scrool .bar-y").css("top", distance)
+            // 滚动距离 = 滑块移动距离 ÷ 窗口高度 x 页面长度
+            // var roat = distance / (bar_Height - $(".px-y span").outerHeight())
+            // var scroll_distance = parseInt(roat * (content_Height - Box_Height))
+            var scroll_distance = parseInt(distance / Box_Height * content_Height);
+            $(".Facet").css("margin-top", -scroll_distance);
+        }
+    })
+</script>
+<script>
+    $(function () {
+        var Box_Height = $(".cvlist").outerHeight();
+        var content_Height = $(".st").outerHeight();
+        var bar_Height = $(".px-y").outerHeight();
+        var isMouseDown = false;
+        var distance = 0;
+
+        //滚动条初始高度；
+        var n = Box_Height / content_Height * bar_Height
+        $(".px-y span").css("height", n)
+        $(".px-y").mousedown(down);
+        $(window).mousemove(move);
+        $(window).mouseup(up);
+
+        function down(event) {
+            isMouseDown = true;
+        }
+
+        function move(event) {
+            event.preventDefault();
+            distance = event.pageY - $(".px-y").offset().top;
+            if (isMouseDown == true) {
+                scroll(distance)
+            }
+        }
+
+        function up() {
+            isMouseDown = false;
+        }
+        // 滚轮事件；
+        $(".cvlist").bind('mousewheel', function (event, delta) {
+            event.preventDefault()
+            var dir = delta > 0 ? 'Up' : 'Down',
+                vel = delta
+            distance = $(".px-y span").offset().top - $(".cvlist").offset().top;
+            vel > 0 ? distance -= 10 : distance += 10
+            scroll(distance);
+        });
+
+        function scroll(distance) {
+            if (distance < 0) {
+                distance = 0
+            } else if (distance > bar_Height - $(".px-y span").outerHeight()) {
+                distance = bar_Height - $(".px-y span").outerHeight();
+            }
+            $(".px-y span").css("top", distance)
+            // 滚动距离 = 滑块移动距离 ÷ 窗口高度 x 页面长度
+            // var roat = distance / (bar_Height - $(".px-y span").outerHeight())
+            // var scroll_distance = parseInt(roat * (content_Height - Box_Height))
+            var scroll_distance = parseInt(distance / Box_Height * content_Height);
+            $(".st").css("margin-top", -scroll_distance);
+        }
+    })
+</script>
+<script>
+    $(function () {
+        $.ajax({
+            url: "php/api.php",
+            type: "POST",
+            dataType: "json",
+            success: function (data, textStatus) {
+
+                console.log(data);
+                var html = template("test", data);
+                $("#lvTred").append(html);
+
+            },
+            error: function (XMLHttpRequest, textstatus, errorThrown) {
+                console.log("失败原因".errorThrown);
+
+            }
+        })
+    })
+
+
+</script>
