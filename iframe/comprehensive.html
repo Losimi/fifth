@@ -34,11 +34,9 @@
     <div class="maincount">
         <div class="unclose ban">
             <h3>未关闭的任务</h3>
-            <i>
-               
-            </i>
+            <i></i>
             <span>
-                 <ul>
+                <ul>
                     <li>编辑</li>
                     <li>删除</li>
                 </ul>
@@ -46,9 +44,7 @@
         </div>
         <div class="today_info ban">
             <h3>今日线索</h3>
-            <i>
-                
-            </i>
+            <i></i>
             <span>
                 <ul>
                     <li>编辑</li>
@@ -57,36 +53,32 @@
             </span>
         </div>
         <div class="price_pake">
-          <h3>金额-阶段</h3>
-            <i>
-                
-
-            </i>
+            <h3>金额-阶段</h3>
+            <i></i>
             <span>
                 <ul>
                     <li>编辑</li>
                     <li>删除</li>
                 </ul>
             </span>
-        <div class="price">
-            <h5>Sum of 金额</h5>
-            <ul>
-                <li>资质审查</li>
-                <li>需求分析</li>
-                <li>价值建议</li>
-                <li>确定决策者</li>
-                <li>提案/报价</li>
-                <li>谈判/复审</li>
-                <li>丢失的线索</li>
-                <li>成交</li>
-            </ul>
-            <h4>阶段</h4>
-        </div></div>
+            <div class="price">
+                <h5>Sum of 金额</h5>
+                <ul>
+                    <li>资质审查</li>
+                    <li>需求分析</li>
+                    <li>价值建议</li>
+                    <li>确定决策者</li>
+                    <li>提案/报价</li>
+                    <li>谈判/复审</li>
+                    <li>丢失的线索</li>
+                    <li>成交</li>
+                </ul>
+                <h4></h4>
+            </div>
+        </div>
         <div class="closed ban">
             <h3>本月关闭</h3>
-            <i>
-                
-            </i>
+            <i></i>
             <span>
                 <ul>
                     <li>编辑</li>
@@ -99,7 +91,7 @@
 
 </html>
 <script type="text/html" id="item">
-{{if status==1}}
+    {{if status==1}}
 <table>
     <thead>
         <tr>
@@ -115,6 +107,7 @@
     </thead>
     <tbody>
         {{each data}}
+
         <tr>
             <td>{{$value.the_theme}}</td>
             <td>{{$value.due_to_the_time}}</td>
@@ -125,13 +118,20 @@
             <td>{{$value.activity_owner}}</td>
             <td>{{$value.the_activity_type}}</td>
         </tr>
+
         {{/each}}
     </tbody>
 </table>
+<div class="page">
+        <i></i>
+        <h6>1到5</h6>
+        <h6>6到10</h6>
+        <i></i>
+    </div>
 {{/if}}
 </script>
 <script type="text/html" id="today">
-{{if status==1}}
+    {{if status==1}}
 <table>
     <thead>
        <tr>
@@ -156,10 +156,49 @@
        {{/each}}
     </tbody>
 </table>
+<div class="page">
+        <i></i>
+        <h6>1到5</h6>
+        <h6>6到10</h6>
+        <i></i>
+    </div>
 {{/if}}
 </script>
-<script type="text/html" id="price">
-
+<script type="text/html" id="closed">
+    {{if status==1}}
+    <table>
+        <thead>
+           <tr>
+                <th>交易名称</th>
+                <th>金额</th>
+                <th>阶段</th>
+                <th>预计成交日期</th>
+                <th>客户名称</th>
+                <th>联系人名称</th>
+                <th>交易所有者</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{each data}}
+            <tr>
+                <td>{{$value.trade_name}}</td>
+                <td>{{$value.the_amount_of}}</td>
+                <td>{{$value.phase}}</td>
+                <td>{{$value.estimated_closing_date}}</td>
+                <td>{{$value.the_customer_name}}</td>          
+                <td>{{$value.contact_name}}</td>
+                <td>{{$value.transaction_owner}}</td>
+            </tr>
+           {{/each}}
+        </tbody>
+    </table>
+    <div class="page">
+        <i></i>
+        <h6>1到5</h6>
+        <h6>6到10</h6>
+        <i></i>
+    </div>
+    {{/if}}
 </script>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://cdn.staticfile.org/artTemplate.js/3.0.1/template.js"></script>
@@ -174,7 +213,7 @@
         success: function (data, textStatus) {
             console.log(data);
             var html = template("item", data);
-            $(".unclose").html(html);
+            $(".unclose").append(html);
         },
         error: function (XMLRequest, textStatus, errorThrown) {
             console.log("报错: " + errorThrown);
@@ -191,51 +230,59 @@
         success: function (data, textStatus) {
             console.log(data);
             var html = template("today", data);
-            $(".today_info").html(html);
+            $(".today_info").append(html);
         },
         error: function (XMLRequest, textStatus, errorThrown) {
             console.log("错误：" + errorThrown);
         }
     })
     $.ajax({
-        url:"../php/comprehensive.php",
-        type:"POST",
-        data:{
-            "action":"price"
+        url: "../php/comprehensive.php",
+        type: "POST",
+        data: {
+            "action": "closed"
         },
-        dataType:"json",
-        success:function(data,textStatus){
+        dataType: "json",
+        success: function (data, textStatus) {
             console.log(data);
-            var html = template("price",data);
-            $(".price").html(html);
+            var html = template("closed", data);
+            $(".closed").append(html);
         },
-        error:function(XMLRequest,textStatus,errorThrown){
-            console.log("warnimg:"+errorThrown);
+        error: function (XMLRequest, textStatus, errorThrown) {
+            console.log("warnimg:" + errorThrown);
         }
     })
     $yao = true;
-    $(".menu_setting").on("click",function(){
-        $yao?$(".menu_setting>ul").show():$(".menu_setting>ul").hide();
+    $(".menu_setting").on("click", function () {
+        $yao ? $(".menu_setting>ul").show() : $(".menu_setting>ul").hide();
         $yao = !$yao;
     })
-    $("select#view").on("change",function(){
-        if($(this).val() == 0){
+    $("select#view").on("change", function () {
+        if ($(this).val() == 0) {
             $(".maincount .unclose").width("95%");
             $(".maincount .price_pake").width("45%");
             $(".maincount .price_pake").height("275px");
-            $(".price").height("230px");
-            $(".price h5").css("top","84px");
-            $(".price ul").css({
-                "top":"168px",
-                "left":"37px"
+            $(".price_pake").css({
+                "float": "right",
             });
-            $(".price ul li").width("75px");
+            $(".price").height("230px");
+            $(".price h5").css("top", "84px");
+            $(".price ul").css({
+                "top": "210px",
+                "left": "60px"
+            });
+            $(".price ul li").width("95px");
             $(".price h4").css({
-                "top":"200px",
-                "left":"350px",
+                "top": "200px",
+                "left": "350px",
             });
             $(".today_info").height("275px").children("h3").html("我今天的活动");
             $(".closed").hide();
         }
     })
+    if( $(".maincount table tr").index() >=5 ){
+        $(this).hide();
+    }else{
+        $(this).show();
+    }
 </script>

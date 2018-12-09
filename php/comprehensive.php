@@ -16,7 +16,7 @@ switch($action){
     break;
     case 'price' :$sql = "select * from phase";
     break;
-    case 'closed' : $sql = "select * from activity where state = '完成' ";
+    case 'closed' : $sql = "select * from shut_down ";
     break;
 }
 $result = mysqli_query($conn,$sql);
