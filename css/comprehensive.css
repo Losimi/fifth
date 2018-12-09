@@ -5,8 +5,12 @@ body {
 header {
     width: 100%;
     height: 43px;
-    background-color: gery;
+    background-color: rgba(255,255,255);
     border: 1px solid rgb(229, 229, 229);
+    position: fixed;
+    left:0;
+    top:50px;
+    z-index: 88;
 }
 
 header .top {
@@ -64,8 +68,12 @@ header .top .main_page .menu_setting ul li a {
     font-size: 13px;
     cursor: pointer;
     font-weight: 400;
+    background: none;
+    margin:0px;
 }
-
+header .top .main_page .menu_setting ul li a::after{
+    display: none;
+}
 header .top .main_page #view{
     width: 130px;
     height: 30px;
@@ -97,4 +105,128 @@ header .top .main_page a:after{
     left: 8px;
     top: 1px;
     background: url(../icon/arrow_2d426_.svg) -1px 0 no-repeat;
+}
+.maincount{
+    margin-top: 96px;
+}
+.maincount div{
+    display: inline-block;
+    height: 413px;
+    background-color: #fff;
+    margin-left: 1%;
+    margin-right: .5%;
+    margin-top: 20px;
+    padding: 20px 25px 25px 25px;
+}
+.maincount .ban{
+    width: 45%;
+}
+.maincount .price_pake{
+    width: 95%;
+    height: 413px;
+
+}
+.maincount .price{
+    display: block;
+    width: 100%;
+    height: 413px;
+    background: url(../icon/price.svg) center 20px no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-right: 0;
+    margin-top: 0;
+    margin-left: 0;
+    padding: 0;
+    position: relative;
+}
+.maincount div h3{
+    font-size:15px;
+    color:rgb(51,51,51);
+    display: inline-block;
+}
+.maincount div i{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background: url(../icon/circle2_1526a_.svg) -18px 0 no-repeat;
+    -webkit-background-size: unset;
+    background-size: unset;
+    position: relative;
+    margin-left: 17px;
+}
+.maincount div i::after{
+   width: 4px;
+    height: 5px;
+    display: block;
+    content: "";
+    position: absolute;
+    left: 8px;
+    top: 1px;
+    background: url(../icon/arrow_2d426_.svg) -1px 0 no-repeat;
+}
+.maincount div span{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background: url(../icon/svgicons_43e8a_.svg) -99px -539px no-repeat;
+    float: right;
+    display: none;
+    position: relative;
+}
+.maincount div:hover span{
+    display: inline-block;
+}
+.maincount div span ul{
+    display: none;
+    width: 87px;
+    height: 66px;
+    background-color: #fff;
+    border:1px solid #d5d5d5;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+    position: absolute;
+    left:-65px;
+    top:15px;
+}
+.maincount div span:hover ul{
+    display: block;
+    cursor: pointer;
+}
+.maincount div span ul li{
+    display: block;
+    width: 87px;
+    height: 33px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 33px;
+}
+.maincount div span ul li:nth-child(2){
+    color: #e00;
+}
+.maincount .price h5{
+    display: block;
+    transform: rotate(-90deg);
+    position: absolute;
+    left:-25px;
+    top:190px;
+    font-size:12px;
+    color:rgb(102,102,102);
+}
+.maincount .price ul{
+    display: block;
+    position: absolute;
+    top: 340px;
+    left: 50px;
+}
+.maincount .price ul li{
+    display: inline-block;
+    width: 168px;
+    text-align: center;
+     font-size:12px;
+    color:rgb(102,102,102);
+}
+.maincount .price h4{
+    display: inline-block;
+    position: absolute;
+    left:715px;
+    top:370px;
 }

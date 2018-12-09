@@ -409,7 +409,7 @@ footer {
 
 footer .footer_nav ul {
     display: inline-block;
-    width: 17rem;
+    width: 17%;
     height: 28px;
     border: 1px solid rgb(178, 178, 178);
     float: left;
@@ -447,7 +447,7 @@ footer .footer_nav ul li a:hover {
 footer .chat {
     display: inline-block;
     height: 28px;
-    width: 85rem;
+    width: 64%;
 }
 
 footer .chat input {
@@ -464,7 +464,7 @@ footer .chat input {
 
 footer .footer_menu {
     float: right;
-    width: 17rem;
+    width: 18%;
     height: 28px;
 }
 

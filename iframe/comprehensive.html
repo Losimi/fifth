@@ -24,7 +24,7 @@
                 </i>
                 <select name="view" id="view">
                     <option value="0">经典视图</option>
-                    <option value="1">董梦轩的主页</option>
+                    <option value="1" selected="selected">董梦轩的主页</option>
                     <option value="2">定制主页</option>
                 </select>
                 <a href="javascript:location.reload();"></a>
@@ -32,10 +32,68 @@
         </div>
     </header>
     <div class="maincount">
-        <div class="unclose"></div>
-        <div class="today_info"></div>
-        <div class="price"></div>
-        <div class="closed"></div>
+        <div class="unclose ban">
+            <h3>未关闭的任务</h3>
+            <i>
+               
+            </i>
+            <span>
+                 <ul>
+                    <li>编辑</li>
+                    <li>删除</li>
+                </ul>
+            </span>
+        </div>
+        <div class="today_info ban">
+            <h3>今日线索</h3>
+            <i>
+                
+            </i>
+            <span>
+                <ul>
+                    <li>编辑</li>
+                    <li>删除</li>
+                </ul>
+            </span>
+        </div>
+        <div class="price_pake">
+          <h3>金额-阶段</h3>
+            <i>
+                
+
+            </i>
+            <span>
+                <ul>
+                    <li>编辑</li>
+                    <li>删除</li>
+                </ul>
+            </span>
+        <div class="price">
+            <h5>Sum of 金额</h5>
+            <ul>
+                <li>资质审查</li>
+                <li>需求分析</li>
+                <li>价值建议</li>
+                <li>确定决策者</li>
+                <li>提案/报价</li>
+                <li>谈判/复审</li>
+                <li>丢失的线索</li>
+                <li>成交</li>
+            </ul>
+            <h4>阶段</h4>
+        </div></div>
+        <div class="closed ban">
+            <h3>本月关闭</h3>
+            <i>
+                
+            </i>
+            <span>
+                <ul>
+                    <li>编辑</li>
+                    <li>删除</li>
+                </ul>
+            </span>
+        </div>
     </div>
 </body>
 
@@ -153,6 +211,31 @@
         },
         error:function(XMLRequest,textStatus,errorThrown){
             console.log("warnimg:"+errorThrown);
+        }
+    })
+    $yao = true;
+    $(".menu_setting").on("click",function(){
+        $yao?$(".menu_setting>ul").show():$(".menu_setting>ul").hide();
+        $yao = !$yao;
+    })
+    $("select#view").on("change",function(){
+        if($(this).val() == 0){
+            $(".maincount .unclose").width("95%");
+            $(".maincount .price_pake").width("45%");
+            $(".maincount .price_pake").height("275px");
+            $(".price").height("230px");
+            $(".price h5").css("top","84px");
+            $(".price ul").css({
+                "top":"168px",
+                "left":"37px"
+            });
+            $(".price ul li").width("75px");
+            $(".price h4").css({
+                "top":"200px",
+                "left":"350px",
+            });
+            $(".today_info").height("275px").children("h3").html("我今天的活动");
+            $(".closed").hide();
         }
     })
 </script>
