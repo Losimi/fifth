@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/rest.css">
+    <link rel="stylesheet" href="css/yangshi.css">
+    <link rel="stylesheet" href="css/yangshi2.css">
+    <link rel="stylesheet" href="js/yinc.js">
+</head>
+
+<body>
+    <div class="nav" id="nav">
+        <div class="nav_ke">
+            <div class="nav_sykh">
+                <a href="#" class="nav_clic">所有客户</a>
+                <span class="nav_jtou"></span>
+            </div>
+            <div class="edit">
+                <a href="#">编辑</a>
+                <span class="ed_icon"></span>
+            </div>
+            <div class="edit_show">
+                <span class="ed_fx">分享给我的</span>
+                <ul>
+                    <li>
+                        <span class="xinxin"></span>
+                        <a href="#">所有客户</a>
+                    </li>
+                    <li>
+                        <span class="xinxin"></span>
+                        <a href="#">我的客户</a>
+                    </li>
+                    <li>
+                        <span class="xinxin"></span>
+                        <a href="#">上周新建</a>
+                    </li>
+                    <li>
+                        <span class="xinxin"></span>
+                        <a href="#">本周新建</a>
+                    </li>
+                    <li>
+                        <span class="xinxin"></span>
+                        <a href="#">最近创建的客户</a>
+                    </li>
+                    <li>
+                        <span class="xinxin"></span>
+                        <a href="#">最近修改的客</a>
+                    </li>
+                </ul>
+                <div class="nav_tiao">
+                    <div class="tiao">
+
+                    </div>
+                </div>
+                <div class="nav_new">
+                    <span class="nav_newj"></span>
+                    <a href="#"> 新建试图</a>
+                </div>
+            </div>
+        </div>
+        <div class="nav_right">
+            <div class="nav_tu">
+                <span class="nav_tu1"></span>
+                <span class="nav_tu2"></span>
+                <span class="nav_tu3"></span>
+            </div>
+            <div class="nav_tj">
+                <button class="nav_jia"></button>
+                <input type="button" value="导入" class="but">
+                <ul class="but_li">
+                    <li>导入客户</li>
+                    <li>导入备注</li>
+                </ul>
+            </div>
+            <div class="nav_sdian">
+                <span class="sdian">
+                    <a href="#">...</a>
+                </span>
+                <div class="yingcang">
+                    <ul>
+                        <li>批量生产</li>
+                        <li>批量跟新</li>
+                        <li>批量标签</li>
+                        <li>重复的客户记录</li>
+                        <li class="xian"></li>
+                        <li>Zoho Sheet试图</li>
+                        <li>打印预览</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class=bodyer>
+        <div class="bd_left">
+            <div class="bd_conten">
+                <div class="bd_lefthede">
+                    <div class="bd_left_show">
+                        <input type="text" placeholder="过滤客户通过" class="bd_inp">
+                        <span class="bd_ssuo"></span>
+                    </div>
+                    <div class="bd_left_yinc">
+                        <span class="bd_yinc_ss"></span>
+                        <input type="text" placeholder="搜索" class="bd_yinc_wen">
+                    </div>
+                </div>
+                <div class="bd_box">
+                    <div class="bd_box_l">
+                        <div class="bd_left_tong1">
+                            <div class="bd_to_yi">
+                                <input type="checkbox" class="bd_l_fang">
+                                <h3>受影响的记录</h3>
+                            </div>
+                            <div class="bd_to_show">
+                                <div class="bd_to_er">
+                                    <h3>通过</h3>
+                                    <select name="" id="">
+                                        <option value="">用户和系统</option>
+                                        <option value="">用户或系统</option>
+                                        <option value="">用户</option>
+                                        <option value="">系统</option>
+                                        <option value="">仅用户</option>
+                                        <option value="">仅系统</option>
+                                    </select>
+                                </div>
+                                <div class="bd_to_san">
+                                    <select name="" id="select1">
+                                        <option value="1">在最近</option>
+                                        <option value="2">今天</option>
+                                        <option value="3">明天</option>
+                                        <option value="4">本周</option>
+                                        <option value="5">今年</option>
+                                        <option value="6">过去30天</option>
+                                        <option value="7">过去60天</option>
+                                        <option value="8">过去90天</option>
+                                    </select>
+                                    <div class="bd_to_xiaos">
+                                        <input type="text" value="2" class="bd_to_san_te">
+                                        <select name="" id="">
+                                            <option value="">月</option>
+                                            <option value="">周</option>
+                                            <option value="">天</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bd_left_tong1">
+                            <div class="bd_to_yi">
+                                <input type="checkbox" class="bd_l_fang">
+                                <h3>未受影响的记录</h3>
+                            </div>
+                            <div class="bd_to_show">
+                                <div class="bd_to_er">
+                                    <h3>通过</h3>
+                                    <select name="" id="">
+                                        <option value="">用户和系统</option>
+                                        <option value="">用户或系统</option>
+                                        <option value="">用户</option>
+                                        <option value="">系统</option>
+                                        <option value="">仅用户</option>
+                                        <option value="">仅系统</option>
+                                    </select>
+                                </div>
+                                <div class="bd_to_san">
+                                    <select name="" id="select1">
+                                        <option value="1">在最近</option>
+                                        <option value="2">今天</option>
+                                        <option value="3">明天</option>
+                                        <option value="4">本周</option>
+                                        <option value="5">今年</option>
+                                        <option value="6">过去30天</option>
+                                        <option value="7">过去60天</option>
+                                        <option value="8">过去90天</option>
+                                    </select>
+                                    <div class="bd_to_xiaos">
+                                        <input type="text" value="2" class="bd_to_san_te">
+                                        <select name="" id="">
+                                            <option value="">月</option>
+                                            <option value="">周</option>
+                                            <option value="">天</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bd_left_tong1">
+                            <div class="bd_to_yi">
+                                <input type="checkbox" class="bd_l_fang">
+                                <h3>记录操作</h3>
+                            </div>
+                            <div class="bd_to_show">
+                                <div class="bd_to_er">
+                                    <h3>通过</h3>
+                                    <select name="" id="">
+                                        <option value="">用户和系统</option>
+                                        <option value="">用户或系统</option>
+                                        <option value="">用户</option>
+                                        <option value="">系统</option>
+                                        <option value="">仅用户</option>
+                                        <option value="">仅系统</option>
+                                    </select>
+                                </div>
+                                <div class="bd_to_san">
+                                    <select name="" id="select1">
+                                        <option value="1">在最近</option>
+                                        <option value="2">今天</option>
+                                        <option value="3">明天</option>
+                                        <option value="4">本周</option>
+                                        <option value="5">今年</option>
+                                        <option value="6">过去30天</option>
+                                        <option value="7">过去60天</option>
+                                        <option value="8">过去90天</option>
+                                    </select>
+                                    <div class="bd_to_xiaos">
+                                        <input type="text" value="2" class="bd_to_san_te">
+                                        <select name="" id="">
+                                            <option value="">月</option>
+                                            <option value="">周</option>
+                                            <option value="">天</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bd_left_tong1">
+                            <div class="bd_to_yi">
+                                <input type="checkbox" class="bd_l_fang">
+                                <h3>相关的操作记录</h3>
+                            </div>
+                            <div class="bd_to_show">
+                                <div class="bd_to_er">
+                                    <h3>通过</h3>
+                                    <select name="" id="">
+                                        <option value="">用户和系统</option>
+                                        <option value="">用户或系统</option>
+                                        <option value="">用户</option>
+                                        <option value="">系统</option>
+                                        <option value="">仅用户</option>
+                                        <option value="">仅系统</option>
+                                    </select>
+                                </div>
+                                <div class="bd_to_san">
+                                    <select name="" id="select1">
+                                        <option value="1">在最近</option>
+                                        <option value="2">今天</option>
+                                        <option value="3">明天</option>
+                                        <option value="4">本周</option>
+                                        <option value="5">今年</option>
+                                        <option value="6">过去30天</option>
+                                        <option value="7">过去60天</option>
+                                        <option value="8">过去90天</option>
+                                    </select>
+                                    <div class="bd_to_xiaos">
+                                        <input type="text" value="2" class="bd_to_san_te">
+                                        <select name="" id="">
+                                            <option value="">月</option>
+                                            <option value="">周</option>
+                                            <option value="">天</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bd_left_tong1">
+                            <div class="bd_to_yi">
+                                <input type="checkbox" class="bd_l_fang">
+                                <h3>邮件状态</h3>
+                            </div>
+                            <div class="bd_to_show">
+                                <div class="bd_to_er">
+                                    <h3>通过</h3>
+                                    <select name="" id="">
+                                        <option value="">用户和系统</option>
+                                        <option value="">用户或系统</option>
+                                        <option value="">用户</option>
+                                        <option value="">系统</option>
+                                        <option value="">仅用户</option>
+                                        <option value="">仅系统</option>
+                                    </select>
+                                </div>
+                                <div class="bd_to_san">
+                                    <select name="" id="select1">
+                                        <option value="1">在最近</option>
+                                        <option value="2">今天</option>
+                                        <option value="3">明天</option>
+                                        <option value="4">本周</option>
+                                        <option value="5">今年</option>
+                                        <option value="6">过去30天</option>
+                                        <option value="7">过去60天</option>
+                                        <option value="8">过去90天</option>
+                                    </select>
+                                    <div class="bd_to_xiaos">
+                                        <input type="text" value="2" class="bd_to_san_te">
+                                        <select name="" id="">
+                                            <option value="">月</option>
+                                            <option value="">周</option>
+                                            <option value="">天</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bd_left_tong1">
+                            <div class="bd_to_yi">
+                                <input type="checkbox" class="bd_l_fang">
+                                <h3>任务、通话及活动</h3>
+                            </div>
+                            <div class="bd_to_show">
+                                <div class="bd_to_er">
+                                    <h3>通过</h3>
+                                    <select name="" id="">
+                                        <option value="">用户和系统</option>
+                                        <option value="">用户或系统</option>
+                                        <option value="">用户</option>
+                                        <option value="">系统</option>
+                                        <option value="">仅用户</option>
+                                        <option value="">仅系统</option>
+                                    </select>
+                                </div>
+                                <div class="bd_to_san">
+                                    <select name="" id="select1">
+                                        <option value="1">在最近</option>
+                                        <option value="2">今天</option>
+                                        <option value="3">明天</option>
+                                        <option value="4">本周</option>
+                                        <option value="5">今年</option>
+                                        <option value="6">过去30天</option>
+                                        <option value="7">过去60天</option>
+                                        <option value="8">过去90天</option>
+                                    </select>
+                                    <div class="bd_to_xiaos">
+                                        <input type="text" value="2" class="bd_to_san_te">
+                                        <select name="" id="">
+                                            <option value="">月</option>
+                                            <option value="">周</option>
+                                            <option value="">天</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bd_left_tong1">
+                            <div class="bd_to_yi">
+                                <input type="checkbox" class="bd_l_fang">
+                                <h3>备注</h3>
+                            </div>
+                            <div class="bd_to_show">
+                                <div class="bd_to_er">
+                                    <h3>通过</h3>
+                                    <select name="" id="">
+                                        <option value="">用户和系统</option>
+                                        <option value="">用户或系统</option>
+                                        <option value="">用户</option>
+                                        <option value="">系统</option>
+                                        <option value="">仅用户</option>
+                                        <option value="">仅系统</option>
+                                    </select>
+                                </div>
+                                <div class="bd_to_san">
+                                    <select name="" id="select1">
+                                        <option value="1">在最近</option>
+                                        <option value="2">今天</option>
+                                        <option value="3">明天</option>
+                                        <option value="4">本周</option>
+                                        <option value="5">今年</option>
+                                        <option value="6">过去30天</option>
+                                        <option value="7">过去60天</option>
+                                        <option value="8">过去90天</option>
+                                    </select>
+                                    <div class="bd_to_xiaos">
+                                        <input type="text" value="2" class="bd_to_san_te">
+                                        <select name="" id="">
+                                            <option value="">月</option>
+                                            <option value="">周</option>
+                                            <option value="">天</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bd_left_tong1">
+                            <div class="bd_to_yi">
+                                <input type="checkbox" class="bd_l_fang">
+                                <h3>交易名称</h3>
+                            </div>
+                            <div class="bd_to_show">
+                                <div class="bd_to_er">
+                                    <h3>通过</h3>
+                                    <select name="" id="">
+                                        <option value="">用户和系统</option>
+                                        <option value="">用户或系统</option>
+                                        <option value="">用户</option>
+                                        <option value="">系统</option>
+                                        <option value="">仅用户</option>
+                                        <option value="">仅系统</option>
+                                    </select>
+                                </div>
+                                <div class="bd_to_san">
+                                    <select name="" id="select1">
+                                        <option value="1">在最近</option>
+                                        <option value="2">今天</option>
+                                        <option value="3">明天</option>
+                                        <option value="4">本周</option>
+                                        <option value="5">今年</option>
+                                        <option value="6">过去30天</option>
+                                        <option value="7">过去60天</option>
+                                        <option value="8">过去90天</option>
+                                    </select>
+                                    <div class="bd_to_xiaos">
+                                        <input type="text" value="2" class="bd_to_san_te">
+                                        <select name="" id="">
+                                            <option value="">月</option>
+                                            <option value="">周</option>
+                                            <option value="">天</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bd_left_tong1">
+                            <div class="bd_to_yi">
+                                <input type="checkbox" class="bd_l_fang">
+                                <h3>金额</h3>
+                            </div>
+                            <div class="bd_to_show">
+                                <div class="bd_to_er">
+                                    <h3>通过</h3>
+                                    <select name="" id="">
+                                        <option value="">用户和系统</option>
+                                        <option value="">用户或系统</option>
+                                        <option value="">用户</option>
+                                        <option value="">系统</option>
+                                        <option value="">仅用户</option>
+                                        <option value="">仅系统</option>
+                                    </select>
+                                </div>
+                                <div class="bd_to_san">
+                                    <select name="" id="select1">
+                                        <option value="1">在最近</option>
+                                        <option value="2">今天</option>
+                                        <option value="3">明天</option>
+                                        <option value="4">本周</option>
+                                        <option value="5">今年</option>
+                                        <option value="6">过去30天</option>
+                                        <option value="7">过去60天</option>
+                                        <option value="8">过去90天</option>
+                                    </select>
+                                    <div class="bd_to_xiaos">
+                                        <input type="text" value="2" class="bd_to_san_te">
+                                        <select name="" id="">
+                                            <option value="">月</option>
+                                            <option value="">周</option>
+                                            <option value="">天</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bd_left_tong1">
+                            <div class="bd_to_yi">
+                                <input type="checkbox" class="bd_l_fang">
+                                <h3>阶段</h3>
+                            </div>
+                            <div class="bd_to_show">
+                                <div class="bd_to_er">
+                                    <h3>通过</h3>
+                                    <select name="" id="">
+                                        <option value="">用户和系统</option>
+                                        <option value="">用户或系统</option>
+                                        <option value="">用户</option>
+                                        <option value="">系统</option>
+                                        <option value="">仅用户</option>
+                                        <option value="">仅系统</option>
+                                    </select>
+                                </div>
+                                <div class="bd_to_san">
+                                    <select name="" id="select1">
+                                        <option value="1">在最近</option>
+                                        <option value="2">今天</option>
+                                        <option value="3">明天</option>
+                                        <option value="4">本周</option>
+                                        <option value="5">今年</option>
+                                        <option value="6">过去30天</option>
+                                        <option value="7">过去60天</option>
+                                        <option value="8">过去90天</option>
+                                    </select>
+                                    <div class="bd_to_xiaos">
+                                        <input type="text" value="2" class="bd_to_san_te">
+                                        <select name="" id="">
+                                            <option value="">月</option>
+                                            <option value="">周</option>
+                                            <option value="">天</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bd_left_tong1">
+                            <div class="bd_to_yi">
+                                <input type="checkbox" class="bd_l_fang">
+                                <h3>预计成交日期</h3>
+                            </div>
+                            <div class="bd_to_show">
+                                <div class="bd_to_er">
+                                    <h3>通过</h3>
+                                    <select name="" id="">
+                                        <option value="">用户和系统</option>
+                                        <option value="">用户或系统</option>
+                                        <option value="">用户</option>
+                                        <option value="">系统</option>
+                                        <option value="">仅用户</option>
+                                        <option value="">仅系统</option>
+                                    </select>
+                                </div>
+                                <div class="bd_to_san">
+                                    <select name="" id="select1">
+                                        <option value="1">在最近</option>
+                                        <option value="2">今天</option>
+                                        <option value="3">明天</option>
+                                        <option value="4">本周</option>
+                                        <option value="5">今年</option>
+                                        <option value="6">过去30天</option>
+                                        <option value="7">过去60天</option>
+                                        <option value="8">过去90天</option>
+                                    </select>
+                                    <div class="bd_to_xiaos">
+                                        <input type="text" value="2" class="bd_to_san_te">
+                                        <select name="" id="">
+                                            <option value="">月</option>
+                                            <option value="">周</option>
+                                            <option value="">天</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bd_left_tong1">
+                            <div class="bd_to_yi">
+                                <input type="checkbox" class="bd_l_fang">
+                                <h3>客户名称</h3>
+                            </div>
+                            <div class="bd_to_show">
+                                <div class="bd_to_er">
+                                    <h3>通过</h3>
+                                    <select name="" id="">
+                                        <option value="">用户和系统</option>
+                                        <option value="">用户或系统</option>
+                                        <option value="">用户</option>
+                                        <option value="">系统</option>
+                                        <option value="">仅用户</option>
+                                        <option value="">仅系统</option>
+                                    </select>
+                                </div>
+                                <div class="bd_to_san">
+                                    <select name="" id="select1">
+                                        <option value="1">在最近</option>
+                                        <option value="2">今天</option>
+                                        <option value="3">明天</option>
+                                        <option value="4">本周</option>
+                                        <option value="5">今年</option>
+                                        <option value="6">过去30天</option>
+                                        <option value="7">过去60天</option>
+                                        <option value="8">过去90天</option>
+                                    </select>
+                                    <div class="bd_to_xiaos">
+                                        <input type="text" value="2" class="bd_to_san_te">
+                                        <select name="" id="">
+                                            <option value="">月</option>
+                                            <option value="">周</option>
+                                            <option value="">天</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bd_left_tong1">
+                            <div class="bd_to_yi">
+                                <input type="checkbox" class="bd_l_fang">
+                                <h3>下一步</h3>
+                            </div>
+                            <div class="bd_to_show">
+                                <div class="bd_to_er">
+                                    <h3>通过</h3>
+                                    <select name="" id="">
+                                        <option value="">用户和系统</option>
+                                        <option value="">用户或系统</option>
+                                        <option value="">用户</option>
+                                        <option value="">系统</option>
+                                        <option value="">仅用户</option>
+                                        <option value="">仅系统</option>
+                                    </select>
+                                </div>
+                                <div class="bd_to_san">
+                                    <select name="" id="select1">
+                                        <option value="1">在最近</option>
+                                        <option value="2">今天</option>
+                                        <option value="3">明天</option>
+                                        <option value="4">本周</option>
+                                        <option value="5">今年</option>
+                                        <option value="6">过去30天</option>
+                                        <option value="7">过去60天</option>
+                                        <option value="8">过去90天</option>
+                                    </select>
+                                    <div class="bd_to_xiaos">
+                                        <input type="text" value="2" class="bd_to_san_te">
+                                        <select name="" id="">
+                                            <option value="">月</option>
+                                            <option value="">周</option>
+                                            <option value="">天</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bd_left_tong1">
+                            <div class="bd_to_yi">
+                                <input type="checkbox" class="bd_l_fang">
+                                <h3>下一步</h3>
+                            </div>
+                            <div class="bd_to_show">
+                                <div class="bd_to_er">
+                                    <h3>通过</h3>
+                                    <select name="" id="">
+                                        <option value="">用户和系统</option>
+                                        <option value="">用户或系统</option>
+                                        <option value="">用户</option>
+                                        <option value="">系统</option>
+                                        <option value="">仅用户</option>
+                                        <option value="">仅系统</option>
+                                    </select>
+                                </div>
+                                <div class="bd_to_san">
+                                    <select name="" id="select1">
+                                        <option value="1">在最近</option>
+                                        <option value="2">今天</option>
+                                        <option value="3">明天</option>
+                                        <option value="4">本周</option>
+                                        <option value="5">今年</option>
+                                        <option value="6">过去30天</option>
+                                        <option value="7">过去60天</option>
+                                        <option value="8">过去90天</option>
+                                    </select>
+                                    <div class="bd_to_xiaos">
+                                        <input type="text" value="2" class="bd_to_san_te">
+                                        <select name="" id="">
+                                            <option value="">月</option>
+                                            <option value="">周</option>
+                                            <option value="">天</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bd_dw">
+                        <div class="bd_fx">
+                            <div class="bd_button">应用过滤器</div>
+                            <div class="bd_button2">清空</div>
+                        </div>
+                    </div>
+                    <div class="silderBar">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bd_right">
+            <div class="bd_right_yi">
+                <div class="tupian">
+                    <span class="tupian1"></span>
+                    <span class="tupian2"></span>
+                </div>
+                <div></div>
+                <div>交易名称</div>
+                <div>金额</div>
+                <div>阶段</div>
+                <div>育成交易日期</div>
+                <div>客户名称</div>
+                <div>联系电话</div>
+                <div>交易所有者</div>
+            </div>
+            <div class="warp">
+                <!-- <div class="moban">
+                    <div class="mo_logo">
+                        <span class="tupian3"></span>
+                    </div>
+                    <div class="mo_logo2">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div> -->
+            </div>
+            <div class="bd_right_er">
+                <div class="bd_data">共计：10</div>
+                <div class="bd_page">
+                    <select name="" id="">
+                        <option value="">
+                            10每页记录
+                        </option>
+                        <option value="">
+                            20每页记录
+                        </option>
+                        <option value="">
+                            30每页记录
+                        </option>
+                        <option value="">
+                            40每页记录
+                        </option>
+                        <option value="">
+                            50每页记录
+                        </option>
+                    </select>
+                    <div class="bd_ye">
+                        <span class="last"></span>
+                        <span>1到10</span>
+                        <span class="next"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bd_right2">
+            <div class="bd_right2_last">
+                <div class="last_left">
+                    <span>STAGWVIEW</span>
+                    <span>排列顺序</span>
+                    <span>-无-
+                        <div class="last_jt"></div>
+                    </span>
+                </div>
+                <div class="last_right">
+                    看板试图设置
+                </div>
+            </div>
+            <div class="bd_right2_next">
+                <ul class="next_moban">
+                    <!-- <li>
+                        <div class="noban_shang">
+                            <div>000000</div>
+                            <div>000000</div>
+                        </div>
+                        <i></i>
+                        <div class="noban_xia">
+                            <div>000000</div>
+                            <div>000000</div>
+                            <div>000000</div>
+                            <div>000000</div>
+                            <div>000000</div>
+                        </div>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script type="text/html" id="test">
+    {{if code==200}}
+    {{each data}}
+            <div class="moban">
+                <div class="mo_logo">
+                    <span class="mo_dui"></span>
+                    <span class="tupian3"></span>
+                </div>
+                <div class="mo_logo2">
+                    <span class="mo_calendar"></span>
+                    <span class="mo_label"></span>
+                </div>
+                <div>{{$value.trade_name}}</div>
+                <div>{{$value.the_amount_of}}</div>
+                <div>{{$value.phase}}</div>
+                <div>{{$value.estimated_closing_date}}</div>
+                <div>{{$value.the_customer_name}}</div>
+                <div>{{$value.contact_name}}</div>
+                <div>{{$value.transaction_owner}}</div>
+            </div>
+        {{/each}}
+    {{/if}}
+</script>
+<script type="text/html" id="test2">
+    {{if code==200}}
+    {{each data}}
+            <li>
+                <div class="noban_shang">
+                    <div class="noban_w"><span class="no_fang"></span><span class="no_right">{{$value.phase}}
+                    </span></div>
+                    <div class="no_kg">￥{{$value.the_amount_of}}</div>
+                </div>
+                <i></i>
+                <div class="noban_xia">
+                    <div>{{$value.trade_name}}</div>
+                    <div>{{$value.transaction_owner}}</div>
+                    <div>{{$value.the_customer_name}}</div>
+                    <div>{{$value.the_amount_of}}</div>
+                    <div>{{$value.estimated_closing_date}}</div>
+                </div>
+            </li>
+        {{/each}}
+        {{/if}}
+</script>
+<script src="http://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+</script>
+<script src="http://cdn.staticfile.org/artTemplate.js/3.0.1/template.js"></script>
+<script src="http://cdn.bootcss.com/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+<script>
+</script>
+<script>
+    $("#nav").mousemove(function () {
+        $(".edit").show();
+        $(".nav_sykh").css("border", "1px solid black");
+    });
+    $("#nav").mouseout(function () {
+        $(".edit").hide();
+        $(".nav_sykh").css("border", "0px solid black");
+    })
+    $(".nav .nav_ke").click(function () {
+        if (!$(".edit_show").is(":visible")) {
+            $(".edit_show").slideDown("show");
+        } else {
+            $(".edit_show").slideUp("show");
+        }
+    })
+    $(".edit_show ul li").mousemove(function () {
+        $(this).css("background-color", "rgb(247, 245, 239)");
+        $(".edit_show .nav_tiao").show();
+    })
+    $(".edit_show ul li").mouseout(function () {
+        $(this).css("background-color", "#fff");
+        $(".edit_show .nav_tiao").hide();
+    })
+    $(".nav_tj").click(function () {
+        console.log("ok");
+        if (!$(".nav_tj .but_li").is(":visible")) {
+            $(".nav_tj .but_li").show();
+        } else {
+            $(".nav_tj .but_li").hide();
+        }
+    })
+    $(".nav_tj .but_li li").mousemove(function () {
+        $(this).css("background-color", "rgb(208,208,208)");
+    })
+    $(".nav_tj .but_li li").mouseout(function () {
+        $(this).css("background-color", "#fff");
+    })
+    $(".nav_sdian").click(function () {
+        if (!$(".nav_sdian .yingcang").is(":visible")) {
+            $(".nav_sdian .yingcang").show();
+        } else {
+            $(".nav_sdian .yingcang").hide();
+        }
+    })
+
+    $(".bodyer .bd_left .bd_lefthede .bd_left_show").click(function () {
+        $(this).hide();
+        $(".bodyer .bd_left .bd_lefthede .bd_left_yinc").show();
+    })
+    $(".bd_left_tong1").each(function (index) {
+        $(this).click(function () {
+            if (!$(".bd_to_show").is(":visible")) {
+                $(".bd_to_show").eq(index).show();
+                $(".bd_dw").show();
+            } else {
+                $(".bd_to_show").eq(index).hide();
+                $(".bd_dw").hide();
+            }
+        })
+    })
+    $(".nav_tu1").click(function () {
+        $(".bd_right").show();
+        $(".bd_right2").hide();
+    })
+    $(".nav_tu2").click(function () {
+        $(".bd_right").hide();
+        $(".bd_right2").show();
+    })
+</script>
+<script>
+    $(function () {
+        var Box_Height = $(".bd_box").outerHeight();
+        var content_Height = $(".bd_box_l").outerHeight();
+        var bar_Height = $(".silderBar").outerHeight();
+        var isMouseDown = false;
+        var distance = 0;
+
+        //滚动条初始高度；
+        var n = Box_Height / content_Height * bar_Height
+        $(".silderBar span").css("height", n)
+        $(".silderBar").mousedown(down);
+        $(window).mousemove(move);
+        $(window).mouseup(up);
+
+        function down(event) {
+            isMouseDown = true;
+        }
+
+        function move(event) {
+            event.preventDefault();
+            distance = event.pageY - $(".silderBar").offset().top;
+            if (isMouseDown == true) {
+                scroll(distance)
+            }
+        }
+
+        function up() {
+            isMouseDown = false;
+        }
+        // 滚轮事件；
+        $(".box").bind('mousewheel', function (event, delta) {
+            event.preventDefault()
+            var dir = delta > 0 ? 'Up' : 'Down',
+                vel = delta
+            distance = $(".silderBar span").offset().top - $(".box").offset().top;
+            vel > 0 ? distance -= 10 : distance += 10
+            scroll(distance);
+        });
+
+        function scroll(distance) {
+            if (distance < 0) {
+                distance = 0
+            } else if (distance > bar_Height - $(".silderBar span").outerHeight()) {
+                distance = bar_Height - $(".silderBar span").outerHeight();
+            }
+            $(".silderBar span").css("top", distance)
+            // 滚动距离 = 滑块移动距离 ÷ 窗口高度 x 页面长度
+            // var roat = distance / (bar_Height - $(".silderBar span").outerHeight())
+            // var scroll_distance = parseInt(roat * (content_Height - Box_Height))
+            var scroll_distance = parseInt(distance / Box_Height * content_Height);
+            $(".content").css("margin-top", -scroll_distance)
+        }
+    })
+</script>
+<script>
+    $(function () {
+        $.ajax({
+            url: "php/api.php",
+            type: "POST",
+            dataType: "json",
+            success: function (data) {
+                console.log(data.data);
+                var html = template("test", data);
+                var html2 = template("test2", data);
+                $(".warp").append(html);
+                $(".bd_right2_next .next_moban").append(html2);
+            },
+        });
+    });
+</script>
